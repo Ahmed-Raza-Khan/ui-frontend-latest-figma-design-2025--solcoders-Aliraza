@@ -252,7 +252,20 @@
     text-decoration: underline solid 0% 0%;
 }
 
-.social-icons a {
+.social-icon-bg-all {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #777777;
+    background-color: #F1F1F1;
+    transition: background-color 0.3s;
+}
+
+.social-icon-bg-fb{
     width: 40px;
     height: 40px;
     display: inline-flex;
@@ -261,6 +274,7 @@
     border-radius: 50%;
     text-decoration: none;
     color: white;
+    background-color: #243755;
     transition: background-color 0.3s;
 }
 
@@ -268,8 +282,56 @@
     opacity: 0.8;
 }
 
-.bg-custom-light {
+/* .bg-custom-light {
     background-color: #f8f9fa;
+} */
+
+.form-need-help div input{
+    width: 355px;
+    height: 66px;
+    border-radius: 5px;
+    border: 1px solid #E2E2E2;
+    background-color: #EBEBEB;
+    color: #ABA9A9;
+    font-family: 'roboto';
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 15px;
+    line-height: 17px;
+    word-spacing: 1px;
+    padding-left: 30px;
+}
+
+.form-need-help div textarea{
+    /* width: 770px; */
+    height: 262px;
+    border-radius: 5px;
+    border: 1px solid #EBEBEB;
+    background-color: #E2E2E2;
+    color: #ABA9A9;
+    font-family: 'roboto';
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 15px;
+    line-height: 17px;
+    word-spacing: 1px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.btn-explore-more {
+    color: #FFFFFF;
+    font-family: 'Nunito';
+    font-weight: 900;
+    font-style: 'Black';
+    font-size: 18px;
+    line-height: 18px;
+    background: url(src/aboutus-coaching/button-33.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 210px;
+    height: 60px;
 }
 
 /* .contact-info-section {
