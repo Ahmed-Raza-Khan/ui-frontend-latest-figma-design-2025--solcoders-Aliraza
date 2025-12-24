@@ -218,19 +218,25 @@
     color: #243755;
 }
 
-.col-md-6 hr {
-    border: none;
-    border-top: 2px solid #ddd;
-    opacity: 1;
+.asked-question-h6{
+    font-family: 'nunito';
+    font-weight: 800;
+    font-size: 20px;
+    font-style: 'extrabold';
+    line-height: 20px;
+    word-spacing: 1px;
+    color: #FF9560;
+    margin-left: 10px;
 }
 
-.bi-check-circle-fill {
-    color: #ff69b4 !important;
-}
-
-.card:hover {
-    transform: translateY(-2px);
-    transition: transform 0.2s ease-in-out;
+.main-title-hexa-linesin{
+    font-family: 'nunito';
+    font-weight: 800;
+    font-style: 'extrabold';
+    font-size: 20px;
+    line-height: 20px;
+    word-spacing: 1px;
+    color: #777777;
 }
 
 
