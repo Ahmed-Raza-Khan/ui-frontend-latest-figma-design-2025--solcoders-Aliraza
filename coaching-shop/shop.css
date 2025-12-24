@@ -115,6 +115,107 @@
 .line:nth-child(20) { background-color: #94EDCA; }
 
 
+.help-section {
+    margin-top: 8px;
+    background-image:
+    linear-gradient(to right,
+            rgba(245, 241, 233, 0.95) 10%,
+            rgba(245, 241, 233, 0.8) 40%,
+            rgba(245, 241, 233, 0) 60%
+        ),
+        url('src/coaching-shop/main-hero-img.png');
+    /* transform: scaleX(-1); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px 0;
+    width: 100%;
+    /* margin-left: 50%; */
+    min-height: 70vh;
+}
+
+.main-content-text-111 h1{
+    width: 624px;
+    height: 130px;
+    font-family: 'Nunito';
+    font-weight: 900;
+    font-style: 'Black';
+    font-size: 65px;
+    line-height: 65px;
+    word-spacing: 10px;
+    color: #243755;
+    margin-left: 20%;
+}
+
+
+.original-price {
+    color: #243755; 
+    font-family: 'roboto';
+    font-weight: 800;
+    font-style: 'extrabold';
+    font-size: 25px;
+    line-height: 30px;
+    word-spacing: 1px;
+}
+
+.current-price{
+    font-family: 'roboto';
+    font-weight: 800;
+    font-style: 'extrabold';
+    font-size: 25px;
+    line-height: 30px;
+    word-spacing: 1px;
+    color: #243755;
+}
+
+.sale-price{
+    font-family: 'roboto';
+    font-weight: 800;
+    font-style: 'extrabold';
+    font-size: 25px;
+    line-height: 30px;
+    word-spacing: 1px;
+    color: #FFA1ACE5;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: auto;
+}
+
+.image-wrapper{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.image-wrapper::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 95%;
+    background-color: #FFA1AC;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.card-body {
+    padding-top: 0.5rem;
+}
+
+.card-title{
+    font-family: 'nunito';
+    font-weight: 600;
+    font-style: 'semibold';
+    font-size: 21px;
+    line-height: 30px;
+    word-spacing: 1px;
+    color: #000000;
+}
+
 
 :root {
     --footer-bg: #243755;
