@@ -10,7 +10,7 @@
 .logo-text {
     color: #243755;
     font-weight: bold;
-    font-size: 1.5re    m;
+    font-size: clamp(24px, 5vw, 39px);
     text-decoration: none;
     margin-left: 7%;
     /* background-color: #4b5563; */
@@ -20,18 +20,20 @@
     font-weight: 900;
     font-style: 'black';
     font-size: 39px;
-    line-height: 39px;
+    line-height: 1;
 }
 
 .nav-link-custom {
-    width: 526px;
-    height: 19px;
+    /* width: 526px; */
+    /* height: 19px; */
     color: #777777;
     margin-right: 1.5rem;
     position: relative;
     text-decoration: none;
     font-family: 'Roboto';
     font-weight: 400;
+    display: inline-block;
+    padding: 10px 0;
     font-style: 'regular';
     font-size: 16px;
     line-height: 100%;
@@ -53,7 +55,7 @@
     width: 100%;
     height: 2px;
     background-color: #FFA1AC;
-    bottom: -5px;
+    bottom: 5px;
     left: 0;
 }
 
@@ -65,11 +67,15 @@
     font-size: 18px;
     line-height: 18px;
     margin-left: 1.5rem;
-    background: url(src/aboutus-coaching/Group\ 258.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(src/aboutus-coaching/Group\ 258.png) no-repeat center;
+    /* background-repeat: no-repeat; */
+    background-size: contain;
     width: 193px;
     height: 54px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-get-started:hover {
@@ -85,39 +91,50 @@
     display: flex;
     gap: 1%;
     width: 100%;
+    height: 4px;
+    overflow: hidden;
 }
 
 .line {
-    height: 4px;
+    height: 100%;
     width: 72px;
-    /* flex-grow: 1; */
+    flex: 1;
 }
 
-.line:nth-child(1) { background-color: #FFD3BD; }
-.line:nth-child(2) { background-color: #B3D0FD; }
-.line:nth-child(3) { background-color: #FFF8B8; }
-.line:nth-child(4) { background-color: #94EDCA; }
-.line:nth-child(5) { background-color: #FFD3BD; }
-.line:nth-child(6) { background-color: #B3D0FD; }
-.line:nth-child(7) { background-color: #FFF8B8; }
-.line:nth-child(8) { background-color: #94EDCA; }
-.line:nth-child(9) { background-color: #FFD3BD; }
-.line:nth-child(10) { background-color: #B3D0FD; }
-.line:nth-child(11) { background-color: #FFF8B8; }
-.line:nth-child(12) { background-color: #94EDCA; }
-.line:nth-child(13) { background-color: #FFD3BD; }
-.line:nth-child(14) { background-color: #B3D0FD; }
-.line:nth-child(15) { background-color: #FFF8B8; }
-.line:nth-child(16) { background-color: #94EDCA; }
-.line:nth-child(17) { background-color: #FFD3BD; }
-.line:nth-child(18) { background-color: #B3D0FD; }
-.line:nth-child(19) { background-color: #FFF8B8; }
-.line:nth-child(20) { background-color: #94EDCA; }
+.line:nth-child(4n+1) { background-color: #FFD3BD; }
+.line:nth-child(4n+2) { background-color: #B3D0FD; }
+.line:nth-child(4n+3) { background-color: #FFF8B8; }
+.line:nth-child(4n+4) { background-color: #94EDCA; }
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .nav-link-custom {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .btn-get-started {
+        margin: 10px auto;
+    }
+
+    .logo-text {
+        margin-left: 0;
+    }
+
+    .line:nth-child(n+12) {
+        display: none;
+    }
+}
 
 
+/* Hero section */
 .help-section {
     margin-top: 8px;
-    background-image:
+    background:
     linear-gradient(to right,
             rgba(245, 241, 233, 0.95) 10%,
             rgba(245, 241, 233, 0.8) 40%,
@@ -128,9 +145,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 100px 0;
+    padding: 60px 0;
     width: 100%;
-    /* margin-left: 50%; */
+    display: flex;
     min-height: 70vh;
 }
 
@@ -148,28 +165,29 @@
 } */
 
 .main-content-text-111 h1{
-    width: 624px;
-    height: 130px;
+    max-width: 650px;
+    /* height: 130px; */
     font-family: 'Nunito';
     font-weight: 900;
     font-style: 'Black';
-    font-size: 65px;
-    line-height: 65px;
-    word-spacing: 10px;
+    font-size: calc(2.5rem + 1.5vw);
+    line-height: 1.1;
+    word-spacing: 5px;
     color: #243755;
-    margin-left: 20%;
+    margin-left: 0%;
 }
 
-.main-content-text-111 p{
-    width: 550px;
-    height: 60px;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-style: 'regular';
-    font-size: 16px;
-    line-height: 30px;
-    word-spacing: 1px;
-    color: #777777;
+@media (max-width: 991px) {
+    .help-section {
+        background: linear-gradient(to right, rgba(245, 241, 233, 0.9), rgba(245, 241, 233, 0)), 
+                    url('src/aboutus-coaching/background-main-hero.png');
+        background-position: center;
+        text-align: center;
+    }
+    
+    .main-content-text-111 h1 {
+        margin: 0 auto;
+    }
 }
 
 /* .help-section h1, .help-section p { */
@@ -197,8 +215,11 @@
     max-width: 624px;
 }
 
-
+/* hero section */
 .need-help-badge{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 197px;
     height: 38px;
     border-radius: 10px;
@@ -210,21 +231,45 @@
     line-height: 18px;
     word-spacing: 1px;
     color: #FFFFFF;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .contact-info-section h2{
     width: 669px;
     height: 37px;
     font-family: 'Nunito';
-    font-size: 45px;
+    font-size: clamp(32px, 5vw, 45px);
     font-style: 'black';
     font-weight: 900;
     line-height: 45px;
     word-spacing: 1px;
     color: #243755;
+}
+
+.address-text{
+    font-family: 'roboto';
+    font-size: 16px;
+    line-height: 1.8;
+    color: #777777;
+    max-width: 250px;
+}
+
+.email-link a{
+    font-family: 'roboto';
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFA1AC;
+    line-height: 1.8;
+    text-decoration: underline;
+}
+
+.social-icon-bg-all, .social-icon-bg-fb{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
 }
 
 .contact-info-section p{
@@ -286,6 +331,23 @@
     background-color: #f8f9fa;
 } */
 
+.custom-input{
+    height: 66px;
+    border-radius: 5px;
+    border: 1px solid #E2E2E2;
+    background-color: #EBEBEB;
+    padding-left: 20px;
+    font-family: 'roboto';
+}
+
+.custom-textarea{
+    border-radius: 5px;
+    border: 1px solid #E2E2E2;
+    background-color: #EBEBEB;
+    padding: 20px;
+    font-family: 'roboto';
+}
+
 .form-need-help div input{
     width: 355px;
     height: 66px;
@@ -328,53 +390,29 @@
     font-size: 18px;
     line-height: 18px;
     background: url(src/aboutus-coaching/button-33.svg);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-size: cover;
     width: 210px;
     height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
 }
 
-/* .contact-info-section {
-    background-color: #e3f2fd;
-    border-radius: 0.25rem;
-} */
-
-
-.colorful-lines-2 {
-    display: flex;
-    gap: 1%;
-    width: 100%;
-    margin-bottom: 10px;
+@media (max-width: 991px) {
+    .contact-info-section {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .address-text {
+        max-width: 100%;
+    }
 }
 
-.line {
-    height: 4px;
-    width: 72px;
-    /* flex-grow: 1; */
-}
-
-.line:nth-child(1) { background-color: #FFD3BD; }
-.line:nth-child(2) { background-color: #B3D0FD; }
-.line:nth-child(3) { background-color: #FFF8B8; }
-.line:nth-child(4) { background-color: #94EDCA; }
-.line:nth-child(5) { background-color: #FFD3BD; }
-.line:nth-child(6) { background-color: #B3D0FD; }
-.line:nth-child(7) { background-color: #FFF8B8; }
-.line:nth-child(8) { background-color: #94EDCA; }
-.line:nth-child(9) { background-color: #FFD3BD; }
-.line:nth-child(10) { background-color: #B3D0FD; }
-.line:nth-child(11) { background-color: #FFF8B8; }
-.line:nth-child(12) { background-color: #94EDCA; }
-.line:nth-child(13) { background-color: #FFD3BD; }
-.line:nth-child(14) { background-color: #B3D0FD; }
-.line:nth-child(15) { background-color: #FFF8B8; }
-.line:nth-child(16) { background-color: #94EDCA; }
-.line:nth-child(17) { background-color: #FFD3BD; }
-.line:nth-child(18) { background-color: #B3D0FD; }
-.line:nth-child(19) { background-color: #FFF8B8; }
-.line:nth-child(20) { background-color: #94EDCA; }
-
-
+/* footer section */
 :root {
     --footer-bg: #243755;
     --text-color: #a0aec0;
@@ -386,6 +424,7 @@
 .site-footer {
     background-color: var(--footer-bg);
     color: var(--text-color);
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -394,8 +433,8 @@
     height: 84px;
     font-style: 'black';
     font-family: 'Nunito';
-    font-size: 78px;
-    line-height: 78px;
+    font-size: clamp(40px, 8vw, 78px);
+    line-height: 1;
     font-weight: 900;
     color: var(--logo-color);
 }
@@ -408,40 +447,41 @@
     font-size: 18px;
     font-weight: 900;
     font-style: 'Black';
-    line-height: 35px;
+    line-height: 1.2;
     position: relative;
+    display: inline-block;
 }
 
 .footer-heading::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -15px;
+    bottom: -10px;
     height: 2px;
-    width: 110px;
+    width: 60px;
     background-color: var(--accent-color);
 }
 
 .footer-text {
-    width: 362px;
+    max-width: 400px;
     height: 60px;
     font-family: 'Roboto';
     font-weight: 400;
     font-style: 'regular';
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.6;
     word-spacing: 1px;
     color: #FFFFFF;
 }
 
 .footer-text-2 {
-    width: 524px;
+    max-width: 100%;
     height: 55px;
     font-family: 'Roboto';
     font-weight: 400;
     font-style: 'regular';
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.6;
     word-spacing: 1px;
     color: #FFFFFF;
     margin-top: 20px;
@@ -449,6 +489,7 @@
 
 .footer-links {
     margin-top: 10px;
+    padding-left: 0;
     font-size: 0.9rem;
     font-family: 'Roboto';
     font-size: 16px;
@@ -460,6 +501,8 @@
 }
 
 .footer-links li {
+    line-height: 2.2;
+    transition: color 0.3s;
     margin-bottom: 0.9rem;
     cursor: pointer;
 }
@@ -474,10 +517,11 @@
     word-spacing: 1px;
     text-decoration: underline;
     cursor: pointer;
+    word-break: break-all;
 }
 
 .social-icon {
-    display: inline-block;
+    display: flex;
     width: 43px;
     height: 43px;
     background-color: rgba(255, 255, 255, 0.15);
@@ -486,12 +530,14 @@
     border-radius: 50%;
     margin-right: 10px;
     cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
 }
 
 .footer-divider {
     border-top: 4px solid #8EAFE2;
+    opacity: 1;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .copyright-text {
@@ -510,4 +556,23 @@
     font-size: 16px;
     line-height: 100%;
     color: var(--logo-color);
+}
+
+@media (max-width: 767px) {
+    .site-footer {
+        text-align: center;
+    }
+    .footer-heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .footer-text, .footer-text-2 {
+        margin: 0 auto;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .footer-links {
+        margin-bottom: 20px;
+    }
 }
