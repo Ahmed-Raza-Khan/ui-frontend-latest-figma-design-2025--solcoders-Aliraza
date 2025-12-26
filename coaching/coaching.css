@@ -10,7 +10,7 @@
 .logo-text {
     color: #243755;
     font-weight: bold;
-    font-size: 1.5re    m;
+    font-size: clamp(24px, 5vw, 39px);
     text-decoration: none;
     margin-left: 7%;
     /* background-color: #4b5563; */
@@ -20,18 +20,20 @@
     font-weight: 900;
     font-style: 'black';
     font-size: 39px;
-    line-height: 39px;
+    line-height: 1;
 }
 
 .nav-link-custom {
-    width: 526px;
-    height: 19px;
+    /* width: 526px; */
+    /* height: 19px; */
     color: #777777;
     margin-right: 1.5rem;
     position: relative;
     text-decoration: none;
     font-family: 'Roboto';
     font-weight: 400;
+    display: inline-block;
+    padding: 10px 0;
     font-style: 'regular';
     font-size: 16px;
     line-height: 100%;
@@ -53,7 +55,7 @@
     width: 100%;
     height: 2px;
     background-color: #FFA1AC;
-    bottom: -5px;
+    bottom: 5px;
     left: 0;
 }
 
@@ -65,11 +67,15 @@
     font-size: 18px;
     line-height: 18px;
     margin-left: 1.5rem;
-    background: url(src/coaching/Group\ 258.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(src/coaching/Group\ 258.png) no-repeat center;
+    /* background-repeat: no-repeat; */
+    background-size: contain;
     width: 193px;
     height: 54px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-get-started:hover {
@@ -85,15 +91,47 @@
     display: flex;
     gap: 1%;
     width: 100%;
+    height: 4px;
+    overflow: hidden;
 }
 
 .line {
-    height: 4px;
+    height: 100%;
     width: 72px;
-    /* flex-grow: 1; */
+    flex: 1;
 }
 
-.line:nth-child(1) { background-color: #FFD3BD; }
+.line:nth-child(4n+1) { background-color: #FFD3BD; }
+.line:nth-child(4n+2) { background-color: #B3D0FD; }
+.line:nth-child(4n+3) { background-color: #FFF8B8; }
+.line:nth-child(4n+4) { background-color: #94EDCA; }
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .nav-link-custom {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .btn-get-started {
+        margin: 10px auto;
+    }
+
+    .logo-text {
+        margin-left: 0;
+    }
+
+    .line:nth-child(n+12) {
+        display: none;
+    }
+}
+
+
+/* .line:nth-child(1) { background-color: #FFD3BD; }
 .line:nth-child(2) { background-color: #B3D0FD; }
 .line:nth-child(3) { background-color: #FFF8B8; }
 .line:nth-child(4) { background-color: #94EDCA; }
@@ -112,14 +150,14 @@
 .line:nth-child(17) { background-color: #FFD3BD; }
 .line:nth-child(18) { background-color: #B3D0FD; }
 .line:nth-child(19) { background-color: #FFF8B8; }
-.line:nth-child(20) { background-color: #94EDCA; }
+.line:nth-child(20) { background-color: #94EDCA; } */
 
 
 .help-section {
-    margin-top: 8px;
+    /* margin-top: 8px; */
     background-image:
     linear-gradient(to right,
-             rgba(245, 241, 233, 0.95) 10%, /* Start almost opaque at the far left */
+            rgba(245, 241, 233, 0.95) 10%,
             rgba(245, 241, 233, 0.8) 40%,
             rgba(245, 241, 233, 0) 60%
         ),
@@ -138,38 +176,42 @@
 .text-bg-pink {
     background-color: #FFA1AC !important;
     color: #FFFFFF !important;
-    /* padding: .5em .75em; */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-flex;
     font-size: 18px;
     font-family: 'nunito';
     font-weight: 900;
     font-style: 'black';
     line-height: 18px;
     width: 197px;
-    height: 38px;   
+    height: 38px;
 }
 
 .main-content-text-111 h1{
-    width: 624px;
+    /* width: 624px; */
+    max-width: 650px;
     height: 130px;
     font-family: 'Nunito';
     font-weight: 900;
     font-style: 'Black';
-    font-size: 65px;
-    line-height: 65px;
+    font-size: clamp(32px, 5vw, 65px);
+    line-height: 1.1;
     word-spacing: 10px;
     color: #243755;
 }
 
 .main-content-text-111 p{
-    width: 550px;
+    max-width: 550px;
     height: 60px;
     font-family: 'Roboto';
     font-weight: 400;
     font-style: 'regular';
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.6;
     word-spacing: 1px;
     color: #777777;
+    margin-bottom: 30px;
 }
 
 /* .help-section h1, .help-section p { */
@@ -255,10 +297,10 @@
 .wehelp-h1 {
     color: #243755;
     font-weight: 900;
-    font-size: 45px;
+    font-size: clamp(28px, 4vw, 45px);
     font-family: 'Nunito';
     font-style: 'black';
-    line-height: 45px;
+    line-height: 1.2;
     word-spacing: 1px;
     color: #243755;
     width: 669px;
@@ -267,30 +309,35 @@
 
 .wehelp-p {
     color: #777777;
-    width: 440px;
+    max-width: 440px;
     height: 90px;
     font-family: 'Roboto';
     font-size: 16px;
     font-weight: 400;
     font-style: 'regular';
-    line-height: 30px;
+    line-height: 1.6;
     word-spacing: 1px;   
 }
 
 .check-list {
-    width: 440px;
+    max-width: 440px;
     height: 30px;
     font-family: 'roboto';
     font-weight: 400;
     font-style: 'regular';
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.6;
     word-spacing: 1px;
     margin-bottom: 5px;
     color: #777777;
 }
 
 .btn-learn-more {
+    border: none;
+    width: 193px;
+    height: 54px;
+    background: url('src/coaching/button-33.svg') no-repeat center;
+    background-size: contain;
     border-radius: 50rem;
     padding: 10px 30px;
     font-weight: 900;
@@ -299,7 +346,48 @@
     font-size: 18px;
     line-height: 18px;
     word-spacing: 1px;
-    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF !important;
+}
+
+.image-box-1 { border-top-left-radius: 50px; }
+.image-box-2 { border-top-right-radius: 50px; }
+.image-box-3 { border-radius: 0 0 20px 20px; }
+
+.image-collage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 991px) {
+    .help-section {
+        background-image: linear-gradient(rgba(245, 241, 233, 0.9), rgba(245, 241, 233, 0.9)), 
+                          url('src/coaching/hero-image-background.png');
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    .main-content-text-111, .col-lg-5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content-text-111 h1, .wehelp-h1 {
+        max-width: 100%;
+    }
+
+    .ms-5 { margin-left: 0 !important; }
+    
+    .check-list {
+        text-align: left;
+        width: 100%;
+    }
 }
 
 /* .check-list .bi-check-circle-fill {
@@ -311,16 +399,17 @@
     /* background-color: #243755; */
     color: #fff;
     position: relative;
-    padding: 100px 0;
+    padding: 0;
     overflow: hidden;
 }
 
 .content-container {
     width: 100%;
-    height: 651px;
+    min-height: 650px;
     background-color: #243755;
     position: relative;
     z-index: 10;
+    padding: 100px 0;
 }
 
 .top-wave {
@@ -328,12 +417,15 @@
     top: 28px;
     left: 0;
     width: 100%;
+    line-height: 0;
 }
 
 .foregroung-image{
     position: absolute;
     z-index: 1;
     width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .backgrounf-image{
@@ -344,6 +436,7 @@
 .bottom-wave{
     position: absolute;
     width: 100%;
+    line-height: 0;
 }
 
 
@@ -351,18 +444,19 @@
     font-family: 'Nunito';
     font-weight: 900;
     font-style: 'Black';
-    font-size: 45px;
-    line-height: 45px;
+    font-size: clamp(28px, 5vw, 45px);
+    line-height: 1.2;
     word-spacing: 1px;
+    margin-bottom: 15px;
     color: #FFFFFF;
-    height: 92px;
+    height: auto;
 }
 
 .subtitle {
     font-family: 'Roboto';
     font-weight: 400;
     font-style: 'regular';
-    line-height: 30px;
+    line-height: 1.6;
     word-break: 1px;
     font-size: 16px;
     color: #FFFFFF;
@@ -386,17 +480,17 @@
     line-height: 23px;
     word-spacing: 1px;
     color: #FFFFFF;
-    /* margin-top: 15px; */
+    margin-top: 15px;
 }
 
 .step-content {
     /* width: 234px; */
-    height: 60px;
+    height: auto;
     font-family: 'Roboto';
     font-weight: 400;
     font-style: 'regular';
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.6;
     word-spacing: 1px;
     color: #FFFFFF;
 }
@@ -408,28 +502,35 @@
     font-style: 'Black';
     font-size: 18px;
     line-height: 18px;
-    background: url(src/coaching/button-orange-background.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(src/coaching/button-orange-background.svg) no-repeat center;
+    background-size: contain;
     width: 210px;
     height: 60px;
-
-
-    /* background-color: #FFA1AC;
-    color: #243755;
     border: none;
-    border-radius: 50rem;
-    padding: 12px 40px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .btn-book-appointment:hover {
     color: #243755;
 }
+
+@media (max-width: 991px) {
+    .content-container {
+        padding: 60px 0;
+    }
+    
+    .step-item {
+        margin-bottom: 40px;
+    }
+
+    .main-heading br {
+        display: none;
+    }
+}
+
 
 
 .main-title {
