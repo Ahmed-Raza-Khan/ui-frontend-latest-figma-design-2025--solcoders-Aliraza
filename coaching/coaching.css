@@ -893,12 +893,14 @@
 .feedback-section {
     background: var(--map-background) no-repeat center center;
     background-size: contain;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    margin-top: 40px;
+    padding: 80px 0;
+    /* padding-top: 8rem; */
+    /* padding-bottom: 8rem; */
+    /* margin-top: 40px; */
     margin-bottom: 40px;
     position: relative;
     overflow: hidden;
+    /* z-index: ; */
 }
 
 .feedback-section::before {
@@ -908,7 +910,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.85);
     z-index: -1;
 }
 
@@ -916,7 +918,7 @@
     font-family: 'Nunito';
     font-weight: 900;
     font-style: 'Black';
-    font-size: 45px;
+    font-size: clamp(30px, 5vw, 45px);
     line-height: 45px;
     word-spacing: 1px;
     color: var(--text-color-dark);
@@ -928,16 +930,18 @@
     font-style: 'Black';
     font-size: '25px';
     line-height: 55px;
+    margin-bottom: 0;
     color: var(--text-color-dark);
 }
 
 .client-title-feedback {
     font-family: 'Nunito';
-    font-weight: 900;
+    font-weight: 700;
     font-size: 15px;
     font-style: 'Black';
     line-height: 23px;
     color: var(--text-color-light);
+    text-transform: uppercase;
 }
 
 /* .feedback-card {
@@ -945,6 +949,39 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
 } */
+
+.testimonial-text{
+    font-family: 'roboto';
+    font-size: clamp(15px, 2vw, 18px);
+    line-height: 1.8;
+    color: var(--text-color-light);
+    position: relative;
+    display: inline-block;
+    padding: 20px 40px;
+    max-width: 900px;
+}
+
+.testimonial-text::before,
+.testimonial-text::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.testimonial-text::before {
+    background-image: var(--quote-start-icon);
+    top: 0;
+    left: 0;
+}
+
+.testimonial-text::after {
+    background-image: var(--quote-end-icon);
+    bottom: 0;
+    right: 0;
+}
 
 .feedback-content p {
     font-family: 'Roboto';
@@ -974,28 +1011,36 @@
     /* top: -1px; */
     width: 100%;
     height: 27px;
-    left: 70px;
+    left: 0px;
 }
 
 .feedback-content p::after {
     background-image: var(--quote-end-icon);
     /* bottom: -15px; */
-    right: 170px;
+    right: 90px;
     height: 28px;
 }
 
-.leave-review-btn {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    border-radius: 25px;
-    padding: 10px 30px;
-    font-weight: 600;
+.btn-explore-more {
+    color: #FFFFFF !important;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    background-image: url('src/coaching/button-33.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 210px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .nav-arrow-feedback {
     position: absolute;
     top: 50%;
-    transform: translateY(-30%);
+    transform: translateY(-50%);
     width: 60px;
     height: 60px;
     cursor: pointer;
@@ -1004,27 +1049,30 @@
 
 .left-arrow-feedback {
     background: var(--arrow-left) no-repeat center;
-    left: -90px;
+    left: -40px;
 }
 
 .right-arrow-feedback {
     background: var(--arrow-right) no-repeat center;
-    right: -90px;
+    right: -40px;
 }
 
-
-.colorful-lines-2 {
-    display: flex;
-    gap: 1%;
-    width: 100%;
-    margin-bottom: 10px;
+@media (min-width: 1400px) {
+    .left-arrow-feedback { left: -100px; }
+    .right-arrow-feedback { right: -100px; }
 }
 
-.line {
-    height: 4px;
-    width: 72px;
-    /* flex-grow: 1; */
+@media (max-width: 768px) {
+    .feedback-section {
+        padding: 50px 0;
+    }
+    .testimonial-text {
+        padding: 20px 10px;
+    }
+    .testimonial-text::before { top: -10px; left: -10px; }
+    .testimonial-text::after { bottom: -10px; right: -10px; }
 }
+
 
 /* FOOTER section */
 :root {
@@ -1038,6 +1086,7 @@
 .site-footer {
     background-color: var(--footer-bg);
     color: var(--text-color);
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -1046,8 +1095,8 @@
     height: 84px;
     font-style: 'black';
     font-family: 'Nunito';
-    font-size: 78px;
-    line-height: 78px;
+    font-size: clamp(40px, 8vw, 78px);
+    line-height: 1;
     font-weight: 900;
     color: var(--logo-color);
 }
@@ -1060,40 +1109,41 @@
     font-size: 18px;
     font-weight: 900;
     font-style: 'Black';
-    line-height: 35px;
+    line-height: 1.2;
     position: relative;
+    display: inline-block;
 }
 
 .footer-heading::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -15px;
+    bottom: -10px;
     height: 2px;
-    width: 110px;
+    width: 60px;
     background-color: var(--accent-color);
 }
 
 .footer-text {
-    width: 362px;
+    max-width: 400px;
     height: 60px;
     font-family: 'Roboto';
     font-weight: 400;
     font-style: 'regular';
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.6;
     word-spacing: 1px;
     color: #FFFFFF;
 }
 
 .footer-text-2 {
-    width: 524px;
+    max-width: 100%;
     height: 55px;
     font-family: 'Roboto';
     font-weight: 400;
     font-style: 'regular';
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.6;
     word-spacing: 1px;
     color: #FFFFFF;
     margin-top: 20px;
@@ -1101,6 +1151,7 @@
 
 .footer-links {
     margin-top: 10px;
+    padding-left: 0;
     font-size: 0.9rem;
     font-family: 'Roboto';
     font-size: 16px;
@@ -1112,6 +1163,8 @@
 }
 
 .footer-links li {
+    line-height: 2.2;
+    transition: color 0.3s;
     margin-bottom: 0.9rem;
     cursor: pointer;
 }
@@ -1126,10 +1179,11 @@
     word-spacing: 1px;
     text-decoration: underline;
     cursor: pointer;
+    word-break: break-all;
 }
 
 .social-icon {
-    display: inline-block;
+    display: flex;
     width: 43px;
     height: 43px;
     background-color: rgba(255, 255, 255, 0.15);
@@ -1138,12 +1192,14 @@
     border-radius: 50%;
     margin-right: 10px;
     cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
 }
 
 .footer-divider {
     border-top: 4px solid #8EAFE2;
+    opacity: 1;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .copyright-text {
@@ -1162,4 +1218,23 @@
     font-size: 16px;
     line-height: 100%;
     color: var(--logo-color);
+}
+
+@media (max-width: 767px) {
+    .site-footer {
+        text-align: center;
+    }
+    .footer-heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .footer-text, .footer-text-2 {
+        margin: 0 auto;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .footer-links {
+        margin-bottom: 20px;
+    }
 }
