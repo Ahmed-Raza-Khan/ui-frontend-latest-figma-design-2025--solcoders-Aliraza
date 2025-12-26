@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+/* navbar section */
 .navbar-custom {
     /* background-color: #ff8787; */
     padding-top: 1rem;
@@ -153,6 +155,7 @@
 .line:nth-child(20) { background-color: #94EDCA; } */
 
 
+/* hero section */
 .help-section {
     /* margin-top: 8px; */
     background-image:
@@ -239,11 +242,6 @@
     max-width: 624px;
 }
 
-/* .btn-learn-more:hover {
-    background-color: #7a92cc;
-    border-color: #7a92cc;
-} */
-
 /* @media (min-width: 992px) {
     .col-lg-6:nth-child(1) {
         color: #333;
@@ -251,18 +249,10 @@
 } */
 
 
+/* HELP section */
 .help-section-2 {
     min-height: 600px;
 }
-
-/* .border-style-dashed{
-    width: 572px;
-    height: 593px;
-    border-radius: 80px;
-    border: 4px dashed #F5F1E9;
-    margin-right: 90px;
-    position: absolute;
-} */
 
 .image-collage {
     border-radius: 20px;
@@ -395,6 +385,7 @@
 } */
 
 
+/* STEPS section */
 .steps-section {
     /* background-color: #243755; */
     color: #fff;
@@ -438,7 +429,6 @@
     width: 100%;
     line-height: 0;
 }
-
 
 .main-heading {
     font-family: 'Nunito';
@@ -533,6 +523,7 @@
 
 
 
+/* SERVICES section */
 .main-title {
     font-family: 'Nunito';
     font-weight: 900;
@@ -556,27 +547,32 @@
 
 .service-card {
     border-radius: 20px;
+    border: none;
+    display: flex;
+    flex-direction: column;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
 }
 
-.service-card:hover {
-    transform: translateY(-5px);
-}
+/* .service-card:hover {
+    transform: translateY(-10px);
+} */
 
 .card-img-top {
-    height: 200px;
+    height: 220px;
     object-fit: cover;
 }
 
 .card-white {
     background-color: #ffffff;
     color: #333;
+    flex-grow: 1;
 }
 
 .card-blue {
     background-color: #B3D0FD;
     color: #243755;
+    flex-grow: 1;
 }
 
 .card-title-3 {
@@ -584,11 +580,11 @@
     font-weight: 900;
     font-size: 20px;
     font-style: 'black';
-    line-height: 30px;
+    line-height: 1.3;
     color: #243755;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     width: 182px;
-    height: 60px;
+    min-height: 55px;
 }
 
 .card-title-111111{
@@ -596,11 +592,11 @@
     font-weight: 900;
     font-size: 20px;
     font-style: 'black';
-    line-height: 30px;
+    line-height: 1.3;
     color: #243755;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     width: 235px;
-    height: 60px;
+    min-height: 55px;
 }
 
 .card-text-111111{
@@ -610,7 +606,8 @@
     font-weight: 400;
     font-style: 'regular';
     font-size: 14px;
-    line-height: 30px;    
+    line-height: 1.6;
+    margin-bottom: 20px;   
 }
 
 .card-title-222222{
@@ -654,8 +651,9 @@
     font-size: 15px;
     font-family: 'nunito';
     line-height: 100%;
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    gap: 8px;
 }
 
 .card-blue .know-more-btn {
@@ -677,15 +675,24 @@
     font-style: 'Black';
     font-size: 18px;
     line-height: 18px;
+    background: #243755;
     background: url(src/coaching/button-33.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 210px;
     height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    transition: opacity 0.3s;
 }
 
 .btn-explore-more:hover {
     color: #243755;
+    opacity: 0.9;
 }
 
 .nav-arrow {
@@ -699,18 +706,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 20;
+    z-index: 10;
 }
 
 .left-arrow {
-    left: -10px;
+    left: -60px;
 }
 
 .right-arrow {
-    right: -10px;
+    right: -60px;
+}
+
+@media (max-width: 1200px) {
+    .left-arrow, .right-arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 32px;
+    }
+    .card-title-custom {
+        min-height: auto;
+    }
 }
 
 
+/* PRODUCTS section */
 .products-section {
     background-color: #F5F1E9;
 }
@@ -719,24 +742,26 @@
     font-family: 'Nunito';
     font-weight: 900;
     font-style: 'Black';
-    font-size: 45px;
-    line-height: 45px;
+    font-size: clamp(30px, 5vw, 45px);
+    line-height: 1.1;
     word-spacing: 1px;
     color: #243755;
+    margin-bottom: 15px;
 }
 
 .subtitle-p-col {
     font-family: 'roboto';
     font-weight: 400;
     font-style: 'regular';
-    line-height: 30px;
+    line-height: 1.6;
     word-spacing: 1px;
     color: #777777;
     font-size: 16px;
+    margin-bottom: 0;
 }
 
 .btn-visit-shop {
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     font-family: 'Nunito';
     font-weight: 900;
     font-style: 'Black';
@@ -744,12 +769,19 @@
     line-height: 18px;
     background: url(src/coaching/button-orange-background.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     width: 193px;
     height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    border: none;
 }
 
 .btn-visit-shop:hover {
+    transform: scale(1.05);
     background-color: #ff8c9a;
     color: #FFFFFF;
 }
@@ -771,11 +803,19 @@
     linear-gradient(rgba(0, 0, 255, 0.7) 90%); */
 }
 
-.image-wrapper{
+.image-wrapper, .image-container{
     position: relative;
+    aspect-ratio: 3 /4;
     width: 100%;
     height: 400px;
     overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-container img, .image-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .image-wrapper::before{
@@ -786,30 +826,32 @@
     width: 100%;
     height: 100%;
     background-color: #FFA1AC;
-    opacity: 0.8;
+    opacity: 0.6;
     z-index: 1;
+    pointer-events: none;
 }
 
 .product-name {
     font-family: 'Nunito';
-    font-weight: 600;
+    font-weight: 700;
     font-style: 'semibold';
-    font-size: 21px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 1.2;
     word-spacing: 1px;
     color: #000000;
-    margin-bottom: 5px;
+    margin-top: 15px;
+    min-height: 50px;
 }
 
 .product-price {
     font-family: 'Roboto';
     font-weight: 800;
     font-style: 'extrabold';
-    font-size: 25px;
+    font-size: 24px;
     line-height: 30px;
     word-spacing: 1px;
     color: #243755;
-    margin: 0;
+    margin-top: 5px;
 }
 
 .span-2-through{
@@ -823,7 +865,20 @@
     margin: 0;
 }
 
+@media (max-width: 576px) {
+    .product-name {
+        font-size: 18px;
+        min-height: auto;
+    }
+    .product-price {
+        font-size: 20px;
+    }
+    .img-container, .image-wrapper {
+        aspect-ratio: 1 / 1;
+    }
+}
 
+/* FEEDBACK section */
 :root {
     --map-background: url('src/coaching/map-background.png');
     --quote-start-icon: url('src/coaching/qutation-start-icon.svg');
@@ -971,28 +1026,7 @@
     /* flex-grow: 1; */
 }
 
-.line:nth-child(1) { background-color: #FFD3BD; }
-.line:nth-child(2) { background-color: #B3D0FD; }
-.line:nth-child(3) { background-color: #FFF8B8; }
-.line:nth-child(4) { background-color: #94EDCA; }
-.line:nth-child(5) { background-color: #FFD3BD; }
-.line:nth-child(6) { background-color: #B3D0FD; }
-.line:nth-child(7) { background-color: #FFF8B8; }
-.line:nth-child(8) { background-color: #94EDCA; }
-.line:nth-child(9) { background-color: #FFD3BD; }
-.line:nth-child(10) { background-color: #B3D0FD; }
-.line:nth-child(11) { background-color: #FFF8B8; }
-.line:nth-child(12) { background-color: #94EDCA; }
-.line:nth-child(13) { background-color: #FFD3BD; }
-.line:nth-child(14) { background-color: #B3D0FD; }
-.line:nth-child(15) { background-color: #FFF8B8; }
-.line:nth-child(16) { background-color: #94EDCA; }
-.line:nth-child(17) { background-color: #FFD3BD; }
-.line:nth-child(18) { background-color: #B3D0FD; }
-.line:nth-child(19) { background-color: #FFF8B8; }
-.line:nth-child(20) { background-color: #94EDCA; }
-
-
+/* FOOTER section */
 :root {
     --footer-bg: #243755;
     --text-color: #a0aec0;
