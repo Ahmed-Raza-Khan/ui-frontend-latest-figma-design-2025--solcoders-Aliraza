@@ -108,7 +108,65 @@
 .line:nth-child(4n+3) { background-color: #FFF8B8; }
 .line:nth-child(4n+4) { background-color: #94EDCA; }
 
-@media (max-width: 991.98px) {
+
+@media (max-width: 767px) {
+    .logo-text {
+        margin-left: 0;
+        font-size: 28px;
+    }
+
+    .navbar-custom {
+        padding: 0.5rem 0;
+    }
+
+    .navbar-collapse {
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .nav-link-custom {
+        margin-right: 0;
+        display: block;
+        padding: 12px 15px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .nav-link-custom.active::after {
+        display: none;
+    }
+
+    .nav-link-custom.active {
+        background-color: #fff5f6;
+        border-radius: 5px;
+    }
+
+    .btn-get-started {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 100%;
+        max-width: 250px;
+        background-size: 100% 100%;
+    }
+
+    .colorful-lines .line:nth-child(n+10) {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 24px;
+    }
+    
+    .colorful-lines {
+        gap: 0.5%;
+    }
+}
+
+/* @media (max-width: 991.98px) {
     .navbar-nav {
         padding: 20px 0;
         text-align: center;
@@ -130,7 +188,7 @@
     .line:nth-child(n+12) {
         display: none;
     }
-}
+} */
 
 
 /* .line:nth-child(1) { background-color: #FFD3BD; }
@@ -240,6 +298,60 @@
     word-spacing: 3px;
     color: #FFFFFF;
     max-width: 624px;
+}
+
+@media (max-width: 767px) {
+    .help-section {
+        background-image: 
+        linear-gradient(to bottom, 
+            rgba(245, 241, 233, 0.9) 0%, 
+            rgba(245, 241, 233, 0.7) 100%
+        ),
+        url('src/coaching/hero-image-background.png');
+        
+        padding: 60px 0;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .main-content-text-111 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content-text-111 h1 {
+        height: auto;
+        font-size: 32px;
+        word-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+    .main-content-text-111 p {
+        height: auto;
+        font-size: 15px;
+        margin-bottom: 25px;
+        max-width: 100%;
+    }
+
+    .text-bg-pink {
+        width: auto;
+        height: auto;
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .btn-learn-more {
+        width: 170px;
+        height: 48px;
+        background-size: 100% 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-content-text-111 h1 {
+        font-size: 28px;
+    }
 }
 
 /* @media (min-width: 992px) {
@@ -354,7 +466,73 @@
     display: block;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
+    .help-section-2 {
+        min-height: auto;
+        padding: 40px 0;
+    }
+
+    .col-6 img {
+        height: 150px;
+    }
+    
+    .image-box-1 { border-top-left-radius: 30px; }
+    .image-box-2 { border-top-right-radius: 30px; }
+    
+    .image-box-3 { 
+        height: 180px;
+        margin-top: 10px; 
+    }
+
+    .wehelp-h1 {
+        width: 100%;
+        height: auto;
+        font-size: 28px;
+        margin-top: 20px;
+        text-align: center;
+        br { display: none; }
+    }
+
+    .wehelp-p {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .check-list {
+        height: auto;
+        max-width: 100%;
+        font-size: 15px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 12px !important;
+    }
+
+    .check-list img {
+        width: 20px;
+        margin-top: 3px;
+    }
+
+    .btn-learn-more {
+        margin: 30px auto 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .wehelp-h1 {
+        font-size: 24px;
+    }
+    
+    .col-6 img {
+        height: 120px;
+    }
+}
+
+/* @media (max-width: 991px) {
     .help-section {
         background-image: linear-gradient(rgba(245, 241, 233, 0.9), rgba(245, 241, 233, 0.9)), 
                           url('src/coaching/hero-image-background.png');
@@ -378,7 +556,7 @@
         text-align: left;
         width: 100%;
     }
-}
+} */
 
 /* .check-list .bi-check-circle-fill {
     color: #FFA1AC;
@@ -507,7 +685,84 @@
     color: #243755;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
+    .content-container {
+        padding: 60px 0;
+        min-height: auto;
+    }
+
+    .top-wave {
+        position: relative;
+        top: 0;
+        height: 50px;
+        width: 100%;
+    }
+    
+    .foregroung-image, .backgrounf-image {
+        height: 50px;
+        object-fit: cover;
+    }
+
+    .main-heading {
+        font-size: 26px;
+        padding: 0 10px;
+    }
+
+    .main-heading br, 
+    .step-content br {
+        display: none;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .step-item {
+        margin-bottom: 40px;
+        padding: 0 15px;
+    }
+
+    .step-item h4 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .step-content {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .btn-book-appointment {
+        width: 190px;
+        height: 54px;
+        font-size: 16px;
+        background-size: 100% 100%;
+        margin-top: 10px;
+    }
+
+    .bottom-wave img {
+        height: 40px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-heading {
+        font-size: 22px;
+    }
+    
+    .icon-bg {
+        width: 65px;
+        height: 65px;
+    }
+
+    .icon-bg img {
+        width: 30px;
+    }
+}
+
+/* @media (max-width: 991px) {
     .content-container {
         padding: 60px 0;
     }
@@ -519,7 +774,7 @@
     .main-heading br {
         display: none;
     }
-}
+} */
 
 
 
@@ -717,7 +972,79 @@
     right: -60px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
+    .services-section {
+        padding: 40px 0 !important;
+    }
+
+    .main-title {
+        font-size: 28px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .service-card {
+        margin-bottom: 10px;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+
+    .card-title-111111, 
+    .card-title-222222, 
+    .card-title-3,
+    .card-text-111111,
+    .card-text-222222,
+    .card-text-3 {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        margin-bottom: 15px;
+    }
+
+    .card-title-111111 br,
+    .card-title-222222 br,
+    .card-text-111111 br,
+    .card-text-222222 br,
+    .card-text-3 br {
+        display: none;
+    }
+
+    .card-body {
+        padding: 20px !important;
+        text-align: left;
+    }
+
+    .card-text-222222, .card-text-3 {
+        line-height: 1.5;
+    }
+
+    .btn-explore-more {
+        width: 180px;
+        height: 50px;
+        font-size: 16px;
+        background-size: 100% 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-title {
+        font-size: 24px;
+    }
+    
+    .card-img-top {
+        height: 180px;
+    }
+}
+
+
+/* @media (max-width: 1200px) {
     .left-arrow, .right-arrow {
         display: none;
     }
@@ -730,7 +1057,7 @@
     .card-title-custom {
         min-height: auto;
     }
-}
+} */
 
 
 /* PRODUCTS section */
@@ -865,7 +1192,77 @@
     margin: 0;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
+    .products-section {
+        padding: 40px 0 !important;
+    }
+
+    .products-section .row.align-items-center {
+        margin-bottom: 30px !important;
+        text-align: center;
+    }
+
+    .main-title {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .subtitle-p-col {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .image-wrapper, 
+    .image-container, 
+    .img-container {
+        height: 280px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .product-card-4-img img {
+        height: 280px !important;
+    }
+
+    .product-name {
+        font-size: 18px;
+        min-height: auto;
+        margin-top: 10px;
+    }
+
+    .product-name br {
+        display: none;
+    }
+
+    .product-price {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .span-2-through {
+        font-size: 20px;
+    }
+
+    .btn-visit-shop {
+        margin: 0 auto;
+        width: 170px;
+        height: 48px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 575px) {
+    .products-section .row.g-4 > div {
+        width: 100%;
+    }
+    
+    .image-wrapper, 
+    .image-container, 
+    .img-container {
+        height: 320px !important;
+    }
+}
+
+/* @media (max-width: 576px) {
     .product-name {
         font-size: 18px;
         min-height: auto;
@@ -876,7 +1273,7 @@
     .img-container, .image-wrapper {
         aspect-ratio: 1 / 1;
     }
-}
+} */
 
 /* FEEDBACK section */
 :root {
@@ -1057,7 +1454,75 @@
     right: -40px;
 }
 
-@media (min-width: 1400px) {
+@media (max-width: 767px) {
+    .feedback-section {
+        padding: 40px 0;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+    .main-heading-feedback {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .sub-heading-feedback {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .testimonial-text {
+        padding: 15px 30px !important;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .testimonial-text br {
+        display: none;
+    }
+
+    .testimonial-text::before,
+    .testimonial-text::after,
+    .feedback-content p::before,
+    .feedback-content p::after {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .feedback-content p::before {
+        left: 0;
+        top: -10px;
+        width: 20px;
+    }
+
+    .feedback-content p::after {
+        right: 0px !important;
+        bottom: -10px;
+    }
+
+    .btn-explore-more {
+        width: 180px;
+        height: 52px;
+        font-size: 16px;
+    }
+
+    .position-relative {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+@media (max-width: 350px) {
+    .main-heading-feedback {
+        font-size: 24px;
+    }
+    
+    .testimonial-text {
+        padding: 15px 20px !important;
+    }
+}
+
+/* @media (min-width: 1400px) {
     .left-arrow-feedback { left: -100px; }
     .right-arrow-feedback { right: -100px; }
 }
@@ -1071,7 +1536,7 @@
     }
     .testimonial-text::before { top: -10px; left: -10px; }
     .testimonial-text::after { bottom: -10px; right: -10px; }
-}
+} */
 
 
 /* FOOTER section */
@@ -1223,6 +1688,86 @@
 @media (max-width: 767px) {
     .site-footer {
         text-align: center;
+        padding-top: 40px !important;
+    }
+
+    .footer-logo {
+        width: 100%;
+        height: auto;
+        font-size: 40px; 
+        margin-bottom: 20px !important;
+    }
+
+    .footer-heading {
+        width: auto;
+        height: auto;
+        margin-bottom: 25px !important;
+    }
+
+    .footer-heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-text, .footer-text-2 {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px !important;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .footer-links li {
+        line-height: 1.8;
+        margin-bottom: 0.5rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+    }
+
+    .footer-email {
+        font-size: 16px;
+        display: block;
+        margin-bottom: 30px !important;
+    }
+
+    .footer-divider {
+        border-top-width: 2px;
+        margin-top: 30px;
+    }
+
+    .copyright-text {
+        font-size: 14px;
+        line-height: 1.5;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .footer-logo {
+        font-size: 32px;
+    }
+    
+    .footer-links {
+        font-size: 14px;
+    }
+}
+
+/* @media (max-width: 767px) {
+    .site-footer {
+        text-align: center;
     }
     .footer-heading::after {
         left: 50%;
@@ -1236,5 +1781,5 @@
     }
     .footer-links {
         margin-bottom: 20px;
-    }
-}
+        }
+} */
