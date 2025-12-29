@@ -252,9 +252,10 @@
 @media screen and (max-width: 991px) {
     .help-section {
         background-image: 
-            linear-gradient(to bottom, 
-                rgba(245, 241, 233, 0.9) 0%, 
-                rgba(245, 241, 233, 0.6) 100%
+            linear-gradient(to right, 
+                rgba(245, 241, 233, 0.9) 10%, 
+                rgba(245, 241, 233, 0.6) 40%
+                rgba(245, 241, 233, 0) 90%
             ),
             url('src/aboutus-coaching/main-hero-section.png');
         padding: 60px 0;
@@ -269,7 +270,7 @@
         font-size: clamp(32px, 10vw, 55px) !important;
         line-height: 1.2 !important;
         word-spacing: 2px !important;
-        justify-content: center;
+        justify-content: left;
     }
 
     .main-content-text-111 p {
