@@ -106,7 +106,79 @@
 .line:nth-child(4n+3) { background-color: #FFF8B8; }
 .line:nth-child(4n+4) { background-color: #94EDCA; }
 
-@media (max-width: 991.98px) {
+@media (max-width: 767px) {
+    .logo-text {
+        margin-left: 0; 
+        font-size: 28px;
+    }
+
+    .navbar-custom {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .navbar-collapse {
+        background-color: #ffffff;
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-top: 10px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+
+    .nav-link-custom {
+        margin-right: 0;
+        font-size: 18px;
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .nav-link-custom.active::after {
+        bottom: 0;
+        width: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .btn-get-started {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 100%;
+        max-width: 220px;
+        display: inline-flex;
+        background-size: 100% 100%;
+    }
+
+    .colorful-lines .line:nth-child(n+10) {
+        display: none;
+    }
+    
+    .colorful-lines {
+        gap: 2px;
+    }
+
+    .navbar-toggler {
+        border-color: #243755;
+    }
+}
+
+@media (max-width: 375px) {
+    .logo-text {
+        font-size: 24px;
+    }
+    
+    .btn-get-started {
+        font-size: 16px;
+        height: 48px;
+    }
+}
+
+/* @media (max-width: 991.98px) {
     .navbar-nav {
         padding: 20px 0;
         text-align: center;
@@ -128,7 +200,7 @@
     .line:nth-child(n+12) {
         display: none;
     }
-}
+} */
 
 
 /* Hero section */
@@ -177,7 +249,46 @@
     margin-left: 0%;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
+    .help-section {
+        background:
+        linear-gradient(to right,
+                rgba(245, 241, 233, 0.95) 10%,
+                rgba(245, 241, 233, 0.8) 40%,
+                rgba(245, 241, 233, 0) 90%
+            ),
+            url('src/aboutus-coaching/background-main-hero.png');        
+        background-position: center;
+        background-size: cover;
+        min-height: 40vh;
+        padding: 40px 0;
+        margin-top: 0;
+    }
+
+    .main-content-text-111 {
+        padding: 0 15px;
+    }
+
+    .main-content-text-111 h1 {
+        font-size: 36px; 
+        line-height: 1.2;
+        word-spacing: 2px;
+        margin-bottom: 0 !important;
+        text-align: left;
+    }
+}
+
+@media (max-width: 375px) {
+    .main-content-text-111 h1 {
+        font-size: 30px;
+    }
+    
+    .help-section {
+        min-height: 30vh;
+    }
+}
+
+/* @media (max-width: 991px) {
     .help-section {
         background: linear-gradient(to right, rgba(245, 241, 233, 0.9), rgba(245, 241, 233, 0)), 
                     url('src/aboutus-coaching/background-main-hero.png');
@@ -188,13 +299,13 @@
     .main-content-text-111 h1 {
         margin: 0 auto;
     }
-}
+} */
 
 /* .help-section h1, .help-section p { */
     /* color: #243755; */
 /* } */
 
-.btn-learn-more {
+/* .btn-learn-more {
     border-radius: 50rem;
     width: 193px;
     height: 54px;
@@ -213,9 +324,10 @@
     word-spacing: 3px;
     color: #FFFFFF;
     max-width: 624px;
-}
+} */
 
-/* hero section */
+
+/* Need Help Section */
 .need-help-badge{
     display: inline-flex;
     align-items: center;
@@ -400,7 +512,78 @@
     transition: 0.3s;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 575px) {
+    .contact-wrapper {
+        padding: 2.5rem 1rem !important;
+    }
+
+    .contact-info-section h2,
+    .form-need-help div input,
+    .form-need-help div textarea,
+    .contact-info-section p,
+    .contact-info-section p a,
+    .address-text {
+        text-align: start;
+        width: 100% !important; 
+        max-width: 100% !important;
+        height: auto !important; 
+    }
+
+    .contact-info-section h2 {
+        font-size: clamp(26px, 8vw, 32px) !important;
+        line-height: 1.2 !important;
+        margin-bottom: 1rem !important;
+        text-align: center;
+    }
+
+    .address-text, .contact-info-section p {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+        margin-bottom: 1.5rem !important;
+        text-align: center;
+    }
+
+    .form-need-help div input {
+        height: 55px !important;
+        padding-left: 15px !important;
+        font-size: 16px !important;
+    }
+
+    .form-need-help div textarea {
+        min-height: 150px !important;
+        padding: 15px !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .social-icon-bg-all, .social-icon-bg-fb {
+        width: 44px !important;
+        height: 44px !important;
+    }
+
+    .btn-explore-more {
+        width: 100% !important;
+        max-width: 250px;
+        height: 55px;
+        font-size: 17px;
+    }
+    
+    .need-help-badge {
+        width: auto !important;
+        padding: 0 20px;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* @media (max-width: 991px) {
     .contact-info-section {
         text-align: center;
         display: flex;
@@ -410,7 +593,7 @@
     .address-text {
         max-width: 100%;
     }
-}
+} */
 
 /* footer section */
 :root {
@@ -558,7 +741,66 @@
     color: var(--logo-color);
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 768px) {
+    .footer-logo, 
+    .footer-heading, 
+    .footer-text, 
+    .footer-text-2 {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+    }
+
+    .footer-logo {
+        font-size: clamp(32px, 12vw, 48px);
+        margin-bottom: 1rem !important;
+    }
+
+    .site-footer .col-lg-4 {
+        margin-bottom: 2rem;
+    }
+
+    .footer-links {
+        line-height: 1.5;
+    }
+    
+    .footer-links li {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-email {
+        font-size: 16px;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .footer-divider {
+        border-top: 2px solid #8EAFE2;
+        margin-top: 1.5rem;
+    }
+
+    @media (max-width: 430px) {
+        .site-footer {
+            text-align: center;
+        }
+
+        .footer-heading::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .social-icons {
+            justify-content: center;
+        }
+
+        .copyright-text {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    }
+}
+
+/* @media (max-width: 767px) {
     .site-footer {
         text-align: center;
     }
@@ -575,4 +817,4 @@
     .footer-links {
         margin-bottom: 20px;
     }
-}
+} */

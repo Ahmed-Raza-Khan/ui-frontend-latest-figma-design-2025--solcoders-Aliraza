@@ -1685,83 +1685,62 @@
     color: var(--logo-color);
 }
 
-@media (max-width: 767px) {
-    .site-footer {
-        text-align: center;
-        padding-top: 40px !important;
+@media screen and (max-width: 768px) {
+    .footer-logo, 
+    .footer-heading, 
+    .footer-text, 
+    .footer-text-2 {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
     }
 
     .footer-logo {
-        width: 100%;
-        height: auto;
-        font-size: 40px; 
-        margin-bottom: 20px !important;
+        font-size: clamp(32px, 12vw, 48px);
+        margin-bottom: 1rem !important;
     }
 
-    .footer-heading {
-        width: auto;
-        height: auto;
-        margin-bottom: 25px !important;
-    }
-
-    .footer-heading::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .footer-text, .footer-text-2 {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 20px !important;
+    .site-footer .col-lg-4 {
+        margin-bottom: 2rem;
     }
 
     .footer-links {
-        list-style: none;
-        padding: 0;
-        margin-bottom: 30px;
+        line-height: 1.5;
     }
-
+    
     .footer-links li {
-        line-height: 1.8;
         margin-bottom: 0.5rem;
-    }
-
-    .social-icons {
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    .social-icon {
-        width: 40px;
-        height: 40px;
-        margin: 0 5px;
     }
 
     .footer-email {
         font-size: 16px;
         display: block;
-        margin-bottom: 30px !important;
+        margin-top: 10px;
     }
 
     .footer-divider {
-        border-top-width: 2px;
-        margin-top: 30px;
+        border-top: 2px solid #8EAFE2;
+        margin-top: 1.5rem;
     }
 
-    .copyright-text {
-        font-size: 14px;
-        line-height: 1.5;
-        padding-bottom: 20px;
-    }
-}
+    @media (max-width: 430px) {
+        .site-footer {
+            text-align: center;
+        }
 
-@media (max-width: 350px) {
-    .footer-logo {
-        font-size: 32px;
-    }
-    
-    .footer-links {
-        font-size: 14px;
+        .footer-heading::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .social-icons {
+            justify-content: center;
+        }
+
+        .copyright-text {
+            font-size: 14px;
+            line-height: 1.4;
+        }
     }
 }
 
