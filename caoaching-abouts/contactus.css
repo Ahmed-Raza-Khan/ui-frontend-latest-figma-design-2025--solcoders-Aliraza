@@ -556,7 +556,7 @@
     }
 
     .social-icons {
-        justify-content: center;
+        justify-content: flex-start;
         margin-bottom: 2.5rem;
     }
 
@@ -799,22 +799,3 @@
         }
     }
 }
-
-/* @media (max-width: 767px) {
-    .site-footer {
-        text-align: center;
-    }
-    .footer-heading::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .footer-text, .footer-text-2 {
-        margin: 0 auto;
-    }
-    .social-icons {
-        justify-content: center;
-    }
-    .footer-links {
-        margin-bottom: 20px;
-    }
-} */
