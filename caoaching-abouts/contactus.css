@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+/* navbar section */
 .navbar-custom {
     /* background-color: #ff8787; */
     padding-top: 1rem;
@@ -178,6 +180,35 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .logo-text {
+        margin-left: 2%;
+        font-size: 32px;
+    }
+
+    .nav-link-custom {
+        margin-right: 0.8rem;
+        font-size: 14px;
+    }
+
+    .btn-get-started {
+        width: 160px;
+        height: 48px;
+        font-size: 16px;
+        margin-left: 0.8rem;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 991px) {
+    .logo-text {
+        margin-left: 0;
+    }
+}
+
 /* @media (max-width: 991.98px) {
     .navbar-nav {
         padding: 20px 0;
@@ -285,6 +316,29 @@
     
     .help-section {
         min-height: 30vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .help-section {
+        background:
+        linear-gradient(to right,
+                rgba(245, 241, 233, 0.98) 20%, 
+                rgba(245, 241, 233, 0.85) 50%,
+                rgba(245, 241, 233, 0) 85%
+            ),
+            url('src/aboutus-coaching/background-main-hero.png');
+        background-position: center;
+        min-height: 50vh;
+        padding: 50px 0;
+    }
+
+    .main-content-text-111 h1 {
+        font-size: 52px;
+        max-width: 500px;
+        line-height: 1.1;
+        margin-left: 0;
+        text-align: left;
     }
 }
 
@@ -583,6 +637,64 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    .contact-info-section h2 {
+        width: 100%;
+        height: auto;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .address-text, 
+    .contact-info-section p, 
+    .contact-info-section p a {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        line-height: 1.5;
+    }
+
+    .form-need-help div input {
+        width: 100% !important;
+        height: 60px;
+        padding-left: 20px;
+    }
+
+    .form-need-help div textarea {
+        width: 100% !important;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .contact-wrapper {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    .social-icons {
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 991px) {
+        .contact-info-section {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social-icons {
+            justify-content: center;
+        }
+
+        .btn-explore-more {
+            display: flex;
+            margin: 0 auto;
+        }
+    }
+}
+
 /* @media (max-width: 991px) {
     .contact-info-section {
         text-align: center;
@@ -594,6 +706,8 @@
         max-width: 100%;
     }
 } */
+
+
 
 /* footer section */
 :root {
@@ -741,7 +855,7 @@
     color: var(--logo-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .footer-logo, 
     .footer-heading, 
     .footer-text, 
@@ -797,5 +911,54 @@
             font-size: 14px;
             line-height: 1.4;
         }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    .footer-logo, 
+    .footer-heading, 
+    .footer-text, 
+    .footer-text-2 {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+    }
+
+    .footer-logo {
+        font-size: 56px; 
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-links {
+        line-height: 1.8;
+    }
+
+    .footer-links li {
+        margin-bottom: 0.4rem;
+        font-size: 15px;
+    }
+
+    .site-footer .col-md-12 {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .social-icons {
+        gap: 15px !important;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-email {
+        font-size: 17px;
+    }
+    
+    .copyright-text {
+        font-size: 15px;
     }
 }
