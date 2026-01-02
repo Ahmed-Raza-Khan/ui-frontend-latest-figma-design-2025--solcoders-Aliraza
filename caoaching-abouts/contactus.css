@@ -280,7 +280,6 @@
     background-position: center;
     padding: 100px 0;
     width: 100%;
-    /* display: flex; */
     min-height: 100vh;
 }
 
@@ -303,7 +302,7 @@
     font-family: 'Nunito';
     font-weight: 900;
     font-style: 'Black';
-    font-size: calc(32px, 6vw, 65px);
+    font-size: clamp(32px, 6vw, 65px);
     line-height: 1.1;
     word-spacing: 5px;
     color: #243755;

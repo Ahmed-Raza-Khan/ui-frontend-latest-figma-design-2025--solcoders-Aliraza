@@ -277,11 +277,11 @@
         url('src/coaching-support/gero-image.png');
     /* transform: scaleX(-1); */
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     padding: 100px 0;
     width: 100%;
-    min-height: 120vh;
+    min-height: 100vh;
 }
 
 .main-content-text-111 h1{
