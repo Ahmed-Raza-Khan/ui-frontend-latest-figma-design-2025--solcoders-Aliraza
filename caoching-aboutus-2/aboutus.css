@@ -247,6 +247,10 @@
         max-width: 250px;
         background-size: 100% 100%;
     }
+    
+    .colorful-lines .line:nth-child(n+14) {
+        display: none;
+    }
 
     .colorful-lines {
         gap: 4px;
@@ -257,10 +261,6 @@
         flex: 1;
         min-width: 10px;
         max-width: 72px;
-    }
-
-    .colorful-lines .line:nth-child(n+12) {
-        display: none;
     }
 }
 
@@ -281,26 +281,26 @@
     background-position: center;
     padding: 100px 0;
     width: 100%;
-    /* margin-left: 50%; */
-    min-height: 70vh;
+    /* display: flex; */
+    min-height: 100vh;
 }
 
 .main-content-text-111 h1{
-    width: 624px;
-    height: 130px;
+    max-width: 624px;
+    /* height: 130px; */
     font-family: 'Nunito';
     font-weight: 900;
     font-style: 'Black';
-    font-size: 65px;
+    font-size: clamp(32px, 6vw, 65px);
     line-height: 65px;
     word-spacing: 10px;
     color: #243755;
-    margin-left: 20%;
+    margin-left: 0%;
 }
 
 .main-content-text-111 p{
-    width: 550px;
-    height: 60px;
+    max-width: 550px;
+    /* height: 60px; */
     font-family: 'Roboto';
     font-weight: 400;
     font-style: 'regular';
@@ -312,12 +312,13 @@
 
 .btn-learn-more {
     border-radius: 50rem;
-    width: 193px;
-    height: 54px;
+    /* width: 193px; */
+    /* height: 54px; */
     text-transform: capitalize;
     background: url(src/coaching/button-33.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 15px 30px;
 }
 
 .text-started-11{
@@ -329,6 +330,35 @@
     word-spacing: 3px;
     color: #FFFFFF;
     max-width: 624px;
+}
+
+@media (max-width: 767px) {
+    .help-section {
+        background:
+        linear-gradient(to right,
+                rgba(245, 241, 233, 0.95) 10%,
+                rgba(245, 241, 233, 0.8) 40%,
+                rgba(245, 241, 233, 0) 60%
+            ),
+            url('src/aboutus-coaching/background-main-hero.png');        
+        background-position: center;
+        background-size: cover;
+        min-height: 40vh;
+        padding: 40px 0;
+        margin-top: 0;
+    }
+
+    .main-content-text-111 {
+        padding: 0 15px;
+    }
+
+    .main-content-text-111 h1 {
+        font-size: 36px; 
+        line-height: 1.2;
+        word-spacing: 2px;
+        margin-bottom: 0 !important;
+        text-align: left;
+    }
 }
 
 @media screen and (max-width: 991px) {

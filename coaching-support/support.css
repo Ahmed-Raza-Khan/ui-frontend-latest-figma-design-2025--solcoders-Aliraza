@@ -22,7 +22,7 @@
     font-weight: 900;
     font-style: 'black';
     font-size: 39px;
-    line-height: 39px;
+    line-height: 1;
 }
 
 .nav-link-custom {
@@ -33,10 +33,12 @@
     position: relative;
     text-decoration: none;
     font-family: 'Roboto';
+    padding: 10px 0;
     font-weight: 400;
     font-style: 'regular';
     font-size: 16px;
-    line-height: 100%;   
+    line-height: 100%;
+    
 }
 
 .nav-link-custom.active {
@@ -99,7 +101,7 @@
 .line:nth-child(4n+3) { background-color: #FFF8B8; }
 .line:nth-child(4n+4) { background-color: #94EDCA; }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .logo-text {
         margin-left: 0; 
         font-size: 28px;
@@ -173,13 +175,100 @@
     .colorful-lines {
         gap: 0.5%;
     }
+
+    /* .btn-get-started {
+        font-size: 16px;
+        height: 48px;
+    } */
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .logo-text {
+        margin-left: 0;
+        font-size: 30px;
+    }
+    
+    .nav-link-custom {
+        margin-right: 1rem;
+        font-size: 14px;
+    }
+
+    .nav-link-custom.active {
+        background-color: #fff5f6;
+        border-radius: 5px;
+    }
+
+    .btn-get-started {
+        width: 160px;
+        height: 48px;
+        font-size: 16px;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 1199px) {
+    .logo-text {
+        margin-left: 0; 
+        font-size: 28px;
+    }
+
+    .navbar-collapse {
+        background-color: #ffffff;
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-top: 10px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        text-align: center;
+        position: relative;
+        z-index: 1000;
+    }
+
+    .nav-link-custom {
+        margin-right: 0;
+        display: block;
+        padding: 12px 15px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .nav-link-custom.active {
+        background-color: #fff5f6;
+        border-radius: 5px;
+    }
+
+    .nav-link-custom.active::after {
+        display: none;
+    }
+    
+    .btn-get-started {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        width: 100%;
+        max-width: 250px;
+        background-size: 100% 100%;
+    }
+
+    .colorful-lines {
+        gap: 4px;
+        justify-content: center;
+    }
+
+    .line {
+        flex: 1;
+        min-width: 10px;
+        max-width: 72px;
+    }
+
+    .colorful-lines .line:nth-child(n+12) {
+        display: none;
+    }
 }
 
 
 /* hero section */
 .help-section {
     margin-top: 8px;
-    background-image:
+    background:
     linear-gradient(to right,
             rgba(245, 241, 233, 0.95) 10%,
             rgba(245, 241, 233, 0.8) 40%,
@@ -188,28 +277,29 @@
         url('src/coaching-support/gero-image.png');
     /* transform: scaleX(-1); */
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
-    padding: 100px 0;
+    background-repeat: no-repeat;
+    padding: 60px 0;
     width: 100%;
     /* margin-left: 50%; */
-    min-height: 70vh;
+    min-height: 80vh;
 }
 
 .main-content-text-111 h1{
-    width: 624px;
+    width: 100%;
+    max-width: 650px;
     height: 130px;
     font-family: 'Nunito';
     font-weight: 900;
     font-style: 'Black';
-    font-size: 65px;
+    font-size: clamp(40px, 8vw, 65px);
     line-height: 65px;
     word-spacing: 10px;
     color: #243755;
-    margin-left: 20%;
+    margin-left: 0%;
 }
 
-@media screen and (max-width: 991px) {
+@media (max-width: 767px) {
     .help-section {
         background-image: 
             linear-gradient(to right, 
@@ -218,9 +308,11 @@
                 rgba(245, 241, 233, 0) 90%
             ),
             url('src/coaching-shop/main-hero-img.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         padding: 60px 0;
         min-height: 40vh;
-        text-align: center;
     }
 
     .main-content-text-111 h1 {
@@ -254,12 +346,65 @@
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 375px) {
     .help-section {
         padding: 40px 0;
     }
     .main-content-text-111 h1 {
         font-size: 28px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .help-section {
+        background: 
+            linear-gradient(to right,
+                rgba(245, 241, 233, 0.95) 10%,
+                rgba(245, 241, 233, 0.8) 40%,
+                rgba(245, 241, 233, 0) 60%
+                ),
+            url('src/coaching-support/gero-image.png');
+        text-align: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 35vh;
+    }
+
+    .main-content-text-111 h1 {
+        font-size: 32px;
+        word-spacing: 2px;
+        margin-left: 0;
+        text-align: start;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .help-section {
+        background: 
+            linear-gradient(to right, 
+                rgba(245, 241, 233, 0.9) 10%, 
+                rgba(245, 241, 233, 0.6) 40%
+                rgba(245, 241, 233, 0) 90%
+            ),
+            url('src/coaching-support/gero-image.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 45vh;
+        padding: 60px 0;
+    }
+
+    .main-content-text-111 h1 {
+        margin-left: 0;
+        text-align: left;
+        font-size: 50px;
+        max-width: 100%;
+    }
+    
+    .main-content-text-111 {
+        padding: 0 40px;
     }
 }
 
