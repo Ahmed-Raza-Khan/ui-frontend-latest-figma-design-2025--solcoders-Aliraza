@@ -268,7 +268,7 @@
 /* HERO section */
 .help-section {
     margin-top: 8px;
-    background-image:
+    background:
     linear-gradient(to right,
             rgba(245, 241, 233, 0.95) 10%,
             rgba(245, 241, 233, 0.8) 40%,
@@ -281,7 +281,6 @@
     background-position: center;
     padding: 100px 0;
     width: 100%;
-    /* display: flex; */
     min-height: 100vh;
 }
 
@@ -427,7 +426,7 @@
             ),
             url('src/aboutus-coaching/main-hero-section.png');
         padding: 60px 0;
-        min-height: 400px;
+        min-height: 60vh;
     }
 
     .main-content-text-111 h1, 
@@ -651,7 +650,6 @@
         text-align: left;
     }
 }
-
 
 
 /* footer section */

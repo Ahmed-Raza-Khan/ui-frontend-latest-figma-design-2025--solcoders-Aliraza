@@ -259,7 +259,7 @@
         max-width: 72px;
     }
 
-    .colorful-lines .line:nth-child(n+12) {
+    .colorful-lines .line:nth-child(n+14) {
         display: none;
     }
 }
@@ -279,16 +279,15 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 60px 0;
+    padding: 100px 0;
     width: 100%;
-    /* margin-left: 50%; */
-    min-height: 80vh;
+    min-height: 120vh;
 }
 
 .main-content-text-111 h1{
     width: 100%;
-    max-width: 650px;
-    height: 130px;
+    max-width: 624px;
+    /* height: 130px; */
     font-family: 'Nunito';
     font-weight: 900;
     font-style: 'Black';
@@ -296,30 +295,59 @@
     line-height: 65px;
     word-spacing: 10px;
     color: #243755;
-    margin-left: 0%;
 }
 
 @media (max-width: 767px) {
     .help-section {
+        background:
+        linear-gradient(to right,
+                rgba(245, 241, 233, 0.95) 10%,
+                rgba(245, 241, 233, 0.8) 40%,
+                rgba(245, 241, 233, 0) 60%
+            ),
+            url('src/coaching-support/gero-image.png');
+        background-position: center;
+        background-size: cover;
+        min-height: 40vh;
+        padding: 40px 0;
+        margin-top: 0;
+    }
+
+    .main-content-text-111 {
+        padding: 0 15px;
+    }
+
+    .main-content-text-111 h1 {
+        font-size: 36px; 
+        line-height: 1.2;
+        word-spacing: 2px;
+        margin-bottom: 0 !important;
+        text-align: left;
+    }
+}
+
+@media (max-width: 991px) {
+    .help-section {
         background-image: 
             linear-gradient(to right, 
-                rgba(245, 241, 233, 0.9) 10%, 
-                rgba(245, 241, 233, 0.6) 40%
-                rgba(245, 241, 233, 0) 90%
+                rgba(245, 241, 233, 0.95) 10%,
+                rgba(245, 241, 233, 0.8) 40%,
+                rgba(245, 241, 233, 0) 60%
             ),
-            url('src/coaching-shop/main-hero-img.png');
+            url('src/coaching-support/gero-image.png');
         background-size: cover;
-        background-position: center;
         background-repeat: no-repeat;
         padding: 60px 0;
-        min-height: 40vh;
+        min-height: 100vh;
+        text-align: center;
     }
 
     .main-content-text-111 h1 {
         width: 100% !important;
+        max-width: 624px;
         height: auto !important;
         margin-left: 0 !important;
-        font-size: clamp(32px, 10vw, 55px) !important;
+        font-size: clamp(35px, 6vw, 65px) !important;
         line-height: 1.2 !important;
         word-spacing: 2px !important;
         justify-content: left;
@@ -346,7 +374,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
     .help-section {
         padding: 40px 0;
     }
@@ -355,56 +383,29 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
     .help-section {
-        background: 
-            linear-gradient(to right,
+        background-image: 
+            linear-gradient(to right, 
                 rgba(245, 241, 233, 0.95) 10%,
                 rgba(245, 241, 233, 0.8) 40%,
                 rgba(245, 241, 233, 0) 60%
-                ),
-            url('src/coaching-support/gero-image.png');
-        text-align: left;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 35vh;
-    }
-
-    .main-content-text-111 h1 {
-        font-size: 32px;
-        word-spacing: 2px;
-        margin-left: 0;
-        text-align: start;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .help-section {
-        background: 
-            linear-gradient(to right, 
-                rgba(245, 241, 233, 0.9) 10%, 
-                rgba(245, 241, 233, 0.6) 40%
-                rgba(245, 241, 233, 0) 90%
             ),
             url('src/coaching-support/gero-image.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 45vh;
         padding: 60px 0;
+        min-height: 110vh;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
-    .main-content-text-111 h1 {
+    .main-content-text-111 h1, 
+    .main-content-text-111 p {
         margin-left: 0;
         text-align: left;
-        font-size: 50px;
-        max-width: 100%;
     }
     
     .main-content-text-111 {
-        padding: 0 40px;
+        padding: 0 30px;
     }
 }
 
@@ -415,13 +416,12 @@
 }
 
 .searchicon-list{
-    width: 80px;
-    height: 66px;
+    width: 70px;
+    height: 100%;
     background-color: #FFA1AC;
-    border-top-right-radius: 80px;
-    border-bottom-right-radius: 80px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
     position: absolute;
-    /* margin-left: 82%; */
     right: 0;
     top: 0;
 }
@@ -445,10 +445,11 @@
     font-family: 'nunito';
     font-weight: 900;
     font-style: 'black';
-    font-size: 25px;
+    font-size: clamp(20px, 2.5vw, 25px);
     line-height: 30px;
     word-spacing: 1px;
     color: #243755;
+    height: auto;
 }
 
 .card-title-orange{
@@ -456,9 +457,10 @@
     font-family: 'nunito';
     font-weight: 900;
     font-style: 'black';
-    font-size: 25px;
+    font-size: clamp(20px, 2.5vw, 25px);
     line-height: 30px;
     word-spacing: 1px;
+    height: auto;
 }
 
 .card-text{
@@ -469,6 +471,8 @@
     line-height: 30px;
     word-spacing: 1px;
     color: #777777;
+    height: auto;
+    max-width: 100%;
 }
 
 .asked-heading{
@@ -505,6 +509,15 @@
 @media (max-width: 768px) {
     .col-8.col-md-8.col-lg-4 {
         width: 100% !important;
+    }
+
+    .row-cols-md-3{
+        row-gap: 30px;
+    }
+
+    .col-md-6{
+        width: 100%;
+        margin-bottom: 2rem;
     }
 
     .asked-heading {
@@ -564,6 +577,42 @@
     .main-title-hexa-linesin {
         font-size: 15px;
         margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    br {
+        display: none;
+    }
+
+    .support-section {
+        margin-left: 0 !important;
+        padding: 3rem 1.5rem;
+    }
+
+    .col-8.col-md-8.col-lg-4 {
+        width: 80% !important;
+        margin: 0 auto;
+    }
+
+    .asked-heading {
+        font-size: 28px;
+        text-align: left;
+        margin-left: 0 !important;
+    }
+
+    .asked-heading + .card-text {
+        margin-left: 0 !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .asked-question-h6, .main-title-hexa-linesin {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .row-cols-md-3 > .col {
+        margin-bottom: 20px;
     }
 }
 
