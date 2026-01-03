@@ -289,7 +289,7 @@
 /* hero section */
 .help-section {
     margin-top: 8px;
-    background-image:
+    background:
     linear-gradient(to right,
             rgba(245, 241, 233, 0.95) 10%,
             rgba(245, 241, 233, 0.8) 40%,
@@ -317,8 +317,8 @@
     font-weight: 900;
     font-style: 'black';
     line-height: 18px;
-    width: 197px;
-    height: 38px;
+    width: auto;
+    height: auto;
 }
 
 .main-content-text-111 h1{
@@ -336,11 +336,11 @@
 
 .main-content-text-111 p{
     max-width: 550px;
-    height: 60px;
+    /* height: 60px; */
     font-family: 'Roboto';
     font-weight: 400;
     font-style: 'regular';
-    font-size: 16px;
+    font-size: clamp(16px, 1.2vw, 18px);
     line-height: 1.6;
     word-spacing: 1px;
     color: #777777;
@@ -358,7 +358,7 @@
     text-transform: capitalize;
     background: url(src/coaching/button-33.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .text-started-11{
@@ -427,16 +427,26 @@
     }
 }
 
-/* @media (min-width: 992px) {
-    .col-lg-6:nth-child(1) {
-        color: #333;
+@media (max-width: 1199px) {
+    .help-section {
+        min-height: 60vh;
+        padding: 60px 0;
     }
-} */
+}
+
+@media (min-width: 2000px) {
+    .container {
+        max-width: 1800px;
+    }
+    .main-content-text-111 h1 {
+        max-width: 1000px;
+    }
+}
 
 
 /* HELP section */
 .help-section-2 {
-    min-height: 600px;
+    min-height: auto;
 }
 
 .image-collage {
@@ -452,15 +462,20 @@
 }
 
 .col-6 img {
-    height: 250px;
+    height: clamp(150px, 20vw, 250px);
 }
 
 .image-box-1{
-    border-top-left-radius: 50px;   
+    border-top-left-radius: 50px;
 }
 
 .image-box-2{
     border-top-right-radius: 50px;
+}
+
+.image-box-3 {
+    border-radius: 0 0 50px 50px;
+    height: clamp(180px, 30vw, 350px);
 }
 
 /* .text-bg-pink {
@@ -472,22 +487,23 @@
 .wehelp-h1 {
     color: #243755;
     font-weight: 900;
-    font-size: clamp(28px, 4vw, 45px);
+    font-size: clamp(32px, 35px, 55px);
     font-family: 'Nunito';
     font-style: 'black';
     line-height: 1.2;
     word-spacing: 1px;
     color: #243755;
-    width: 669px;
-    height: 91px;
+    width: 100%;
+    height: auto;
+    max-width: 900px;
 }
 
 .wehelp-p {
     color: #777777;
-    max-width: 440px;
-    height: 90px;
+    max-width: 550px;
+    height: auto;
     font-family: 'Roboto';
-    font-size: 16px;
+    font-size: clamp(16px, 1.1vw, 18px);
     font-weight: 400;
     font-style: 'regular';
     line-height: 1.6;
@@ -505,6 +521,9 @@
     word-spacing: 1px;
     margin-bottom: 5px;
     color: #777777;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .btn-learn-more {
@@ -528,9 +547,6 @@
     color: #FFFFFF !important;
 }
 
-.image-box-1 { border-top-left-radius: 50px; }
-.image-box-2 { border-top-right-radius: 50px; }
-.image-box-3 { border-radius: 0 0 20px 20px; }
 
 .image-collage img {
     width: 100%;
@@ -539,8 +555,22 @@
     display: block;
 }
 
+@media (max-width: 1024px) {
+    .wehelp-h1 {
+        max-width: 100%;
+        /* br { display: none; } */
+    }
+}
+
+@media (min-width: 2500px) {
+    .container {
+        max-width: 2000px;
+    }
+}
+
 @media (max-width: 767px) {
     .help-section-2 {
+        text-align: center;
         min-height: auto;
         padding: 40px 0;
     }
@@ -551,10 +581,10 @@
     
     .image-box-1 { border-top-left-radius: 30px; }
     .image-box-2 { border-top-right-radius: 30px; }
-    
     .image-box-3 { 
         height: 180px;
-        margin-top: 10px; 
+        margin-top: 10px;
+        border-radius: 0 0 30px 30px;
     }
 
     .wehelp-h1 {
@@ -563,7 +593,7 @@
         font-size: 28px;
         margin-top: 20px;
         text-align: center;
-        br { display: none; }
+        /* br { display: none; } */
     }
 
     .wehelp-p {
@@ -572,7 +602,7 @@
         height: auto;
         text-align: center;
         font-size: 15px;
-        margin-bottom: 20px;
+        margin: 0 auto 20px;
     }
 
     .check-list {
@@ -580,6 +610,8 @@
         max-width: 100%;
         font-size: 15px;
         display: flex;
+        justify-content: center;
+        text-align: left;
         align-items: flex-start;
         gap: 10px;
         margin-bottom: 12px !important;
@@ -605,36 +637,6 @@
     }
 }
 
-/* @media (max-width: 991px) {
-    .help-section {
-        background-image: linear-gradient(rgba(245, 241, 233, 0.9), rgba(245, 241, 233, 0.9)), 
-                          url('src/coaching/hero-image-background.png');
-        text-align: center;
-        padding: 60px 0;
-    }
-
-    .main-content-text-111, .col-lg-5 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-content-text-111 h1, .wehelp-h1 {
-        max-width: 100%;
-    }
-
-    .ms-5 { margin-left: 0 !important; }
-    
-    .check-list {
-        text-align: left;
-        width: 100%;
-    }
-} */
-
-/* .check-list .bi-check-circle-fill {
-    color: #FFA1AC;
-} */
-
 
 /* STEPS section */
 .steps-section {
@@ -643,6 +645,7 @@
     position: relative;
     padding: 0;
     overflow: hidden;
+    background-color: #243755;
 }
 
 .content-container {
@@ -650,16 +653,17 @@
     min-height: 650px;
     background-color: #243755;
     position: relative;
-    z-index: 10;
-    padding: 100px 0;
+    z-index: 5;
+    padding: clamp(80px, 10vw, 120px) 0;
 }
 
 .top-wave {
     position: absolute;
-    top: 28px;
+    top: 0;
     left: 0;
     width: 100%;
-    line-height: 0;
+    z-index: 10;
+    pointer-events: none;
 }
 
 .foregroung-image{
@@ -668,29 +672,35 @@
     width: 100%;
     top: 0;
     left: 0;
+    display: block;
 }
 
 .backgrounf-image{
     position: absolute;
     width: 100%;
+    top: 0;
+    left: 0;
+    display: block;
 }
 
 .bottom-wave{
     position: absolute;
     width: 100%;
     line-height: 0;
+    margin-top: -2px;
 }
 
 .main-heading {
     font-family: 'Nunito';
     font-weight: 900;
     font-style: 'Black';
-    font-size: clamp(28px, 5vw, 45px);
-    line-height: 1.2;
+    font-size: clamp(15px, 1vw, 18px);
+    line-height: 1.6;
     word-spacing: 1px;
-    margin-bottom: 15px;
+    margin: 0 auto;
     color: #FFFFFF;
     height: auto;
+    max-width: 700px;
 }
 
 .subtitle {
@@ -744,7 +754,7 @@
     font-size: 18px;
     line-height: 18px;
     background: url(src/coaching/button-orange-background.svg) no-repeat center;
-    background-size: contain;
+    background-size: 100% 100%;
     width: 210px;
     height: 60px;
     border: none;
@@ -820,7 +830,36 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1199px) {
+    .content-container { padding: 100px 20px; }
+}
+
+@media (max-width: 991px) {
+    .top-wave { top: -1px; }
+    .main-heading br { display: none; }
+}
+
+@media (max-width: 576px) {
+    .content-container { padding: 60px 15px; }
+    .step-content br { display: none; }
+    
+    .icon-bg {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .btn-book-appointment {
+        width: 100%;
+        max-width: 250px;
+        height: 55px;
+    }
+}
+
+@media (min-width: 2500px) {
+    .container { max-width: 2000px; }
+}
+
+/* @media (max-width: 400px) {
     .main-heading {
         font-size: 22px;
     }
@@ -833,22 +872,7 @@
     .icon-bg img {
         width: 30px;
     }
-}
-
-/* @media (max-width: 991px) {
-    .content-container {
-        padding: 60px 0;
-    }
-    
-    .step-item {
-        margin-bottom: 40px;
-    }
-
-    .main-heading br {
-        display: none;
-    }
 } */
-
 
 
 /* SERVICES section */
