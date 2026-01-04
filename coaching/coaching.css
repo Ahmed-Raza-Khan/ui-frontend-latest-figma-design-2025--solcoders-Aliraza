@@ -1159,22 +1159,6 @@
 }
 
 
-/* @media (max-width: 1200px) {
-    .left-arrow, .right-arrow {
-        display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    .main-title {
-        font-size: 32px;
-    }
-    .card-title-custom {
-        min-height: auto;
-    }
-} */
-
-
 /* PRODUCTS section */
 .products-section {
     background-color: #F5F1E9;
@@ -1184,7 +1168,7 @@
     font-family: 'Nunito';
     font-weight: 900;
     font-style: 'Black';
-    font-size: clamp(30px, 5vw, 45px);
+    font-size: clamp(32px, 5vw, 55px);
     line-height: 1.1;
     word-spacing: 1px;
     color: #243755;
@@ -1198,8 +1182,36 @@
     line-height: 1.6;
     word-spacing: 1px;
     color: #777777;
-    font-size: 16px;
+    font-size: clamp(15px, 1.1vw, 18px);
     margin-bottom: 0;
+}
+
+.img-container-fluid {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1.2;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.img-container-fluid img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.overlay-active::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 161, 172, 0.6);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .btn-visit-shop {
@@ -1277,7 +1289,7 @@
     font-family: 'Nunito';
     font-weight: 700;
     font-style: 'semibold';
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
     word-spacing: 1px;
     color: #000000;
@@ -1289,12 +1301,15 @@
     font-family: 'Roboto';
     font-weight: 800;
     font-style: 'extrabold';
-    font-size: 24px;
+    font-size: 22px;
     line-height: 30px;
     word-spacing: 1px;
     color: #243755;
     margin-top: 5px;
 }
+
+.price-old { text-decoration: line-through; opacity: 0.6; }
+.span-2-through { color: #FFA1AC; margin-left: 8px; }
 
 .span-2-through{
     font-family: 'Roboto';
@@ -1305,6 +1320,15 @@
     word-spacing: 1px;
     color: #FFA1AC;
     margin: 0;
+}
+
+@media (max-width: 1199px) {
+    .product-name { min-height: auto; font-size: 17px; }
+    .product-price { font-size: 20px; }
+}
+
+@media (min-width: 2500px) {
+    .container { max-width: 2000px; }
 }
 
 @media (max-width: 767px) {
@@ -1318,12 +1342,13 @@
     }
 
     .main-title {
-        font-size: 32px;
+        font-size: 30px;
+        text-align: center;
         margin-bottom: 5px;
     }
 
     .subtitle-p-col {
-        font-size: 14px;
+        font-size: 20px;
         margin-bottom: 15px;
     }
 
@@ -1332,6 +1357,10 @@
     .img-container {
         height: 280px !important;
         margin-bottom: 10px !important;
+    }
+
+    .img-container-fluid {
+        aspect-ratio: 1 / 1.1;
     }
 
     .product-card-4-img img {
@@ -1358,9 +1387,9 @@
     }
 
     .btn-visit-shop {
-        margin: 0 auto;
-        width: 170px;
-        height: 48px;
+        margin: 20px auto 0;
+        max-width: 250px;
+        width: 100%;
         font-size: 16px;
     }
 }
@@ -1404,15 +1433,15 @@
 
 .feedback-section {
     background: var(--map-background) no-repeat center center;
-    background-size: contain;
-    padding: 80px 0;
+    background-size: cover;
+    padding: clamp(40px, 8vw, 100px) 0;
     /* padding-top: 8rem; */
     /* padding-bottom: 8rem; */
     /* margin-top: 40px; */
     margin-bottom: 40px;
     position: relative;
     overflow: hidden;
-    /* z-index: ; */
+    z-index: 1;
 }
 
 .feedback-section::before {
@@ -1430,7 +1459,7 @@
     font-family: 'Nunito';
     font-weight: 900;
     font-style: 'Black';
-    font-size: clamp(30px, 5vw, 45px);
+    font-size: clamp(32px, 5vw, 48px);
     line-height: 45px;
     word-spacing: 1px;
     color: var(--text-color-dark);
@@ -1464,21 +1493,21 @@
 
 .testimonial-text{
     font-family: 'roboto';
-    font-size: clamp(15px, 2vw, 18px);
+    font-size: clamp(16px, 1.2vw, 20px);
     line-height: 1.8;
     color: var(--text-color-light);
     position: relative;
     display: inline-block;
-    padding: 20px 40px;
-    max-width: 900px;
+    padding: 30px 50px;
+    max-width: 100%;
 }
 
 .testimonial-text::before,
 .testimonial-text::after {
     content: '';
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: clamp(20px, 3vw, 35px);
+    height: clamp(20px, 3vw, 35px);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -1540,6 +1569,7 @@
     font-size: 18px;
     background-image: url('src/coaching/button-33.svg');
     background-repeat: no-repeat;
+    background-position: center;
     background-size: 100% 100%;
     width: 210px;
     height: 60px;
@@ -1569,11 +1599,26 @@
     right: -40px;
 }
 
+@media (max-width: 1199px) {
+    .left-arrow-feedback { left: -20px; }
+    .right-arrow-feedback { right: -20px; }
+    
+    .testimonial-text {
+        padding: 25px 40px;
+    }
+}
+
+@media (min-width: 2500px) {
+    .container { max-width: 1800px; }
+    .testimonial-text { max-width: 1200px; }
+}
+
 @media (max-width: 767px) {
     .feedback-section {
         padding: 40px 0;
         background-size: cover;
         margin-bottom: 20px;
+        background-image: none;
     }
 
     .main-heading-feedback {
@@ -1587,8 +1632,9 @@
     }
 
     .testimonial-text {
-        padding: 15px 30px !important;
+        padding: 20px 30px !important;
         font-size: 15px;
+        text-align: center;
         line-height: 1.6;
     }
 
@@ -1610,14 +1656,19 @@
         width: 20px;
     }
 
+    .nav-arrow-feedback {
+        display: none;
+    }
+
     .feedback-content p::after {
         right: 0px !important;
         bottom: -10px;
     }
 
     .btn-explore-more {
-        width: 180px;
-        height: 52px;
+        width: 100%;
+        max-width: 250px;
+        height: 55px;
         font-size: 16px;
     }
 
@@ -1637,22 +1688,6 @@
     }
 }
 
-/* @media (min-width: 1400px) {
-    .left-arrow-feedback { left: -100px; }
-    .right-arrow-feedback { right: -100px; }
-}
-
-@media (max-width: 768px) {
-    .feedback-section {
-        padding: 50px 0;
-    }
-    .testimonial-text {
-        padding: 20px 10px;
-    }
-    .testimonial-text::before { top: -10px; left: -10px; }
-    .testimonial-text::after { bottom: -10px; right: -10px; }
-} */
-
 
 /* FOOTER section */
 :root {
@@ -1671,8 +1706,6 @@
 }
 
 .footer-logo {
-    width: 228px;
-    height: 84px;
     font-style: 'black';
     font-family: 'Nunito';
     font-size: clamp(40px, 8vw, 78px);
@@ -1682,8 +1715,6 @@
 }
 
 .footer-heading {
-    width: 207px;
-    height: 26px;
     font-family: 'Nunito';
     color: var(--heading-color);
     font-size: 18px;
@@ -1691,7 +1722,7 @@
     font-style: 'Black';
     line-height: 1.2;
     position: relative;
-    display: inline-block;
+    display: block;
 }
 
 .footer-heading::after {
@@ -1705,8 +1736,8 @@
 }
 
 .footer-text {
-    max-width: 400px;
-    height: 60px;
+    max-width: 100%;
+    height: auto;
     font-family: 'Roboto';
     font-weight: 400;
     font-style: 'regular';
@@ -1718,7 +1749,7 @@
 
 .footer-text-2 {
     max-width: 100%;
-    height: 55px;
+    height: auto;
     font-family: 'Roboto';
     font-weight: 400;
     font-style: 'regular';
@@ -1859,21 +1890,49 @@
     }
 }
 
-/* @media (max-width: 767px) {
+@media screen and (max-width: 1199px) {
+    .site-footer {
+        padding-top: 3rem;
+    }
+
+    .footer-logo {
+        font-size: 48px;
+    }
+
+    .footer-links {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .footer-links li {
+        margin-bottom: 0.7rem;
+    }
+
+    .col-md-12 .footer-heading {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
     .site-footer {
         text-align: center;
     }
+
     .footer-heading::after {
         left: 50%;
         transform: translateX(-50%);
     }
-    .footer-text, .footer-text-2 {
-        margin: 0 auto;
-    }
+
     .social-icons {
         justify-content: center;
+        margin-top: 20px;
     }
-    .footer-links {
-        margin-bottom: 20px;
-        }
-} */
+
+    .footer-text, .footer-text-2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-divider {
+        border-top-width: 2px;
+    }
+}
