@@ -154,7 +154,7 @@
         background-size: 100% 100%;
     }
 
-    .colorful-lines .line:nth-child(n+10) {
+    .colorful-lines .line:nth-child(n+14) {
         display: none;
     }
     
