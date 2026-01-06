@@ -1,0 +1,203 @@
+@import url('https://fonts.cdnfonts.com/css/amcap-eternal');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* navbar section */
+/* body{
+    background-color: #666666;
+} */
+
+:root {
+    --riders-orange: #FF6E1D;
+    --font-montserrat: 'Montserrat';
+    --font-amcap: 'AMCAP Eternal';
+    --font-color: #666666;
+    --font-white: #FFFFFF;
+    --hero-heading: #111111;
+}
+
+.logo-main{
+    font-family: var(--font-amcap);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 30px;
+    
+}
+
+.custom-orange-link {
+    color: var(--riders-orange) !important;
+    font-family: var(--font-montserrat);
+    font-size: 16px;
+    font-style: 'medium';
+    line-height: 26px;
+    font-weight: 500;
+}
+
+.text-nav-all{
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: var(--font-color);
+}
+
+.custom-orange-btn {
+    width: 170px;
+    height: 55px;
+    font-weight: 500;
+    font-style: 'medium';
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 14px;
+    font-family: var(--font-montserrat);
+    background-color: var(--riders-orange);
+    /* border-color: var(--riders-orange); */
+    border-radius: 5px;
+    color: var(--font-white);
+}
+
+
+/* hero section */
+:root {
+    --riders-orange: #ff6600;
+    --text-color: #333;
+}
+
+.hero-section {
+    position: relative;
+    padding: 100px 0;
+    background-color: #fff;
+    overflow: hidden;
+    height: 800px;
+}
+
+.main-heading {
+    color: var(--hero-heading);
+    font-family: var(--font-amcap);
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: -3%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+h1 span{
+    color: var(--riders-orange);
+    font-family: var(--font-amcap);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -3%;
+    text-transform: uppercase;
+}
+
+.description {
+    width: 474px;
+    height: 52px;
+    font-family: var(--font-montserrat);
+    font-weight: 300;
+    font-style: 'light';
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--font-color);
+}
+
+.custom-orange-btn-book {
+    width: 180px;
+    height: 60px;
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-style: 'medium';
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: capitalize;
+    background-color: var(--riders-orange);
+    color: var(--font-white);
+    border: none;
+    border-radius: 5px;
+}
+
+.car-section-image{
+    top: 40%;
+}
+
+.car-image {
+    width: 1094px;
+    left: 33%;
+    bottom: 25%;
+    position: absolute;
+    z-index: 10;
+}
+
+.orange-curves{
+    position: relative;
+    right: 5%;
+}
+
+
+/* step section */
+.text-orange {
+    color: var(--riders-orange) !important;
+}
+
+.main-section-heading {
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: -3%;
+    text-transform: uppercase;
+    font-family: var(--font-amcap);
+    color: var(--hero-heading);
+}
+
+.main-section-description {
+    width: 672px;
+    height: 45px;
+    font-weight: 300;
+    font-family: var(--font-montserrat);
+    font-style: 'light';
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--font-color);
+    margin-left: 11%;
+}
+
+.feature-heading {
+    font-weight: bold;
+    color: var(--heading-color);
+    margin-bottom: 15px;
+}
+
+.feature-description {
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.icon-box {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* .active-icon-box {
+    background-color: #fff;
+} */
+
+.custom-icon {
+    width: 100%; 
+    height: 100%;
+    /* filter: invert(20%) sepia(80%) saturate(2000%) hue-rotate(330deg) brightness(100%) contrast(100%); */
+}
+
+.custom-icon-white {
+    width: 100%; 
+    height: 100%;
+    /* filter: brightness(0) invert(1); */
+}
