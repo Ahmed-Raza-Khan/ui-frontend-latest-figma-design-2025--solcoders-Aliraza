@@ -1433,7 +1433,7 @@
 
 .feedback-section {
     background: var(--map-background) no-repeat center center;
-    background-size: cover;
+    background-size: contain;
     padding: clamp(40px, 8vw, 100px) 0;
     /* padding-top: 8rem; */
     /* padding-bottom: 8rem; */
