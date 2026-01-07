@@ -167,14 +167,26 @@ h1 span{
 }
 
 .feature-heading {
-    font-weight: bold;
-    color: var(--heading-color);
     margin-bottom: 15px;
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 25px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-family: var(--font-amcap);
+    color: var(--hero-heading);
 }
 
 .feature-description {
-    color: var(--text-color);
-    font-size: 0.9rem;
+    width: 299px;
+    height: 62px;
+    font-family: var(--font-montserrat);
+    font-weight: 300;
+    font-style: 'light';
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--font-color);
+    margin-left: 10%;
 }
 
 .icon-box {
@@ -200,4 +212,495 @@ h1 span{
     width: 100%; 
     height: 100%;
     /* filter: brightness(0) invert(1); */
+}
+
+
+/* car image logo section */
+.feature-section {
+    background-color: #fff;
+    /* border-bottom: 5px solid var(--riders-orange);  */
+}
+
+.main-feature-heading {
+    font-family: var(--font-amcap);
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 51px;
+    font-style: 'regular';
+    text-transform: uppercase;
+    color: var(--hero-heading);
+}
+
+.description-text {
+    width: 560px;
+    font-family: var(--font-montserrat);
+    font-weight: 300;
+    font-style: 'light';
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--font-color);
+}
+
+.car-image-style {
+    right: 51%;
+    position: absolute;
+}
+
+.heading-car-sec2{
+    left: 45%;
+}
+
+.feature-item {
+    display: flex;
+    font-family: var(--font-montserrat);
+    font-size: 15px;
+    font-weight: 600;
+    font-style: 'medium';
+    line-height: 23px;
+    text-transform: capitalize;
+    color: var(--hero-heading);
+    align-items: center;
+}
+
+.check-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.custom-orange-btn-car-sec {
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-size: 14px;
+    font-style: 'medium';
+    line-height: 14px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    background-color: var(--riders-orange);
+    color: var(--font-white);
+    border: none;
+}
+
+
+/* LOGO SECTION */
+.brand-logo {
+    max-height: 80px; 
+    width: auto;
+}
+
+
+/* car shop section */
+.car-card {
+    background-color: var(--font-white);
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.img-container{
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    background-color: #FFF6F1;
+    padding: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+}
+
+.car-title {
+    font-family: var(--font-amcap);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--hero-heading);
+    margin-bottom: 0.5rem;
+}
+
+.user-shop-img{
+    width: 15px;
+    height: 15px;
+}
+
+.meta-info {
+    font-family: var(--font-montserrat);
+    font-size: 12px;
+    font-weight: 300;
+    font-style: 'light';
+    line-height: 26px;
+    text-transform: capitalize;
+    color: var(--hero-heading);
+}
+
+.description-text-shop2 {
+    font-family: var(--font-montserrat);
+    font-size: 13px;
+    font-style: 'light';
+    font-weight: 300;
+    line-height: 23px;
+    margin-top: 0.5rem;
+    color: var(--font-color);
+}
+
+.price-text {
+    font-size: 16px;
+    font-family: var(--font-montserrat);
+    font-style: 'semibold';
+    line-height: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--hero-heading);
+}
+
+.day-text {
+    font-size: 14px;
+    font-family: var(--font-montserrat);
+    font-style: 'regular';
+    line-height: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--font-color);
+}
+
+.book-now-btn {
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-style: 'medium';
+    font-size: 10px;
+    line-height: 10px;
+    text-transform: capitalize;
+    background-color: var(--riders-orange);
+    border: none;
+    color: var(--font-white);
+    padding: 8px 16px;
+    border-radius: 4px;
+    width: 95px;
+    height: 32px;
+}
+
+/* .book-now-btn:hover {
+    background-color: #e65c00;
+    color: white;
+} */
+
+.custom-orange-btn-shop {
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-style: 'medium';
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: capitalize;
+    color: var(--font-white);
+    background-color: var(--riders-orange);
+    border: none;
+    border-radius: 5px;
+    width: 190px;
+    height: 50px;
+}
+
+
+/* car book section */
+/* .main-hero-section {
+    background-color: #fff32f;
+} */
+
+.hero-content-box {
+    background-color: var(--riders-orange);
+    border-radius: 10px;
+    overflow: hidden;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .context-box-bok-car{
+    left: 20%;
+} */
+
+.main-heading-car-book {
+    font-family: var(--font-amcap);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 45px;
+    line-height: 51px;
+    text-transform: uppercase;
+    color: var(--font-white);
+    width: 567px;
+    height: 102px;
+}
+
+.orange-text-book{
+    color: var(--hero-heading);
+    font-family: var(--font-amcap);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 45px;
+    line-height: 51px;
+    text-transform: uppercase;
+}
+
+.description-text-book {
+    font-family: var(--font-montserrat);
+    font-size: 16px;
+    font-weight: 300;
+    font-style: 'light';
+    line-height: 26px;
+    color: var(--font-white);
+}
+
+.custom-dark-btn {
+    background-color: var(--hero-heading);
+    border: none;
+    color: var(--font-white);
+    border-radius: 5px;
+    font-family: var(--font-montserrat);
+    font-size: 14px;
+    line-height: 14px;
+    font-style: 'medium';
+    font-weight: 500;
+    text-transform: capitalize;
+    width: 170px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-image-style-book {
+    width: 1094px;
+    left: 40%;
+    /* height: auto; */
+    /* z-index: 11; */
+}
+
+/* about us section */
+.main-section-heading-aboutus {
+    font-family: var(--font-amcap);
+    font-size: 45px;
+    font-weight: 400;
+    font-style: 'regular';
+    line-height: 45px;
+    text-transform: uppercase;
+    letter-spacing: -3%;
+    color: var(--hero-heading);
+}
+
+.main-section-description-aboutus {
+    font-family: var(--font-montserrat);
+    font-size: 16px;
+    font-weight: 300;
+    font-style: 'light';
+    line-height: 26px;
+    color: var(--font-color);
+    width: 672px;
+    height: 45px;
+    margin-left: 10%;
+}
+
+.testimonial-card {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.icon-gray {
+    width: 56px;
+    height: auto;
+}
+
+.icon-orange {
+    width: 56px;
+    height: auto;
+}
+
+.quote-text {
+    font-family: var(--font-montserrat);
+    font-size: 16px;
+    font-weight: 300;
+    font-style: 'light';
+    line-height: 26px;
+    color: var(--font-color);
+}
+
+.user-avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-name {
+    font-family: var(--font-amcap);
+    font-size: 18px;
+    font-weight: 400;
+    font-style: 'regular';
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--hero-heading);
+}
+
+.user-title {
+    font-family: var(--font-montserrat);
+    font-size: 16px;
+    font-weight: 300;
+    font-style: 'light';
+    line-height: 26px;
+    color: var(--font-color);
+    margin-top: 2px;
+}
+
+
+/* footer section */
+.site-footer {
+    background-image: url('src/riders-image/footer-img.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.logo-text-footer{
+    font-family: var(--font-amcap);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 49px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: var(--font-white);
+}
+
+.social-icon-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon-link:hover {
+    background-color: #555;
+    color: white;
+}
+
+.orange-bg {
+    background-color: var(--riders-orange);
+}
+
+.orange-bg:hover {
+    background-color: #e65c00;
+}
+
+.footer-divider {
+    border: 1px solid #3C3C3C;
+    opacity: 1;
+}
+
+.footer-heading {
+    font-family: var(--font-amcap);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 23px;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.footer-links li a {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: var(--font-white);
+    text-decoration: none;
+}
+
+.footer-links li {
+    margin-bottom: 20px;
+}
+
+.footer-links li a:hover {
+    color: var(--riders-orange);
+    text-decoration: underline;
+}
+
+.contact-info {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: var(--font-white);
+    text-decoration: none;
+}
+
+.newsletter-desc {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--font-white);
+    text-decoration: none;
+}
+
+.newsletter-desc-email{
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--font-white);
+    text-decoration: none;
+    width: 434px;
+    height: 16px;
+}
+
+.newsletter-input {
+    background-color: transparent;
+    border: 1px solid var(--font-white);
+    color: white;
+    font-size: 0.9rem;
+    box-shadow: none !important; 
+    width: 434px;
+    height: 55px;
+}
+
+.newsletter-input::placeholder {
+    color: var(--font-white);
+    font-family: var(--font-white);
+    font-size: 13px;
+    line-height: 13px;
+    font-style: 'regular';
+    font-weight: 400;
+    /* opacity: 0.6; */
+}
+
+.custom-orange-btn-footer {
+    background-color: var(--riders-orange);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.custom-orange-btn:hover {
+    background-color: #e65c00;
+}
+
+.copyright-text {
+    font-size: 0.8rem;
+    color: #555;
 }
