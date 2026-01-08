@@ -20,7 +20,6 @@
     font-weight: 400;
     font-style: 'regular';
     font-size: 30px;
-    
 }
 
 .custom-orange-link {
@@ -57,10 +56,54 @@
     color: var(--font-white);
 }
 
+/* hero section */
+.about-hero-section {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    padding-top: 5rem;
+    height: 700px;
+}
+
+.hero-content-container {
+    height: 300px;
+    position: relative;
+    z-index: 1;
+}
+
+.main-about-heading {
+    font-family: var(--font-amcap);
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 80px;
+    font-style: 'regular';
+    letter-spacing: -3%;
+    color: var(--hero-heading);
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.about-description-text {
+    font-family: var(--font-montserrat);
+    color: var(--font-color);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: 'regular';
+    line-height: 26px;
+    text-transform: capitalize;
+    margin-top: 0.5rem;
+}
+
+.orange-curve-divider {
+    position: absolute;
+    rotate: calc(-3deg);
+}
+
 
 /* car image logo section */
 .feature-section {
     background-color: #fff;
+    margin-top: -10%;
 }
 
 .main-feature-heading {
@@ -112,7 +155,7 @@
 
 /* description section */
 .long-description-section {
-    margin-top: -60px;
+    margin-top: 2%;
 }
 
 .long-description-section .description-text {
