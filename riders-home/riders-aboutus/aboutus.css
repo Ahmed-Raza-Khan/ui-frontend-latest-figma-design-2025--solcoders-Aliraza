@@ -1,0 +1,358 @@
+@import url('https://fonts.cdnfonts.com/css/amcap-eternal');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* navbar section */
+/* body{
+    background-color: #666666;
+} */
+
+:root {
+    --riders-orange: #FF6E1D;
+    --font-montserrat: 'Montserrat';
+    --font-amcap: 'AMCAP Eternal';
+    --font-color: #666666;
+    --font-white: #FFFFFF;
+    --hero-heading: #111111;
+}
+
+.logo-main{
+    font-family: var(--font-amcap);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 30px;
+    
+}
+
+.custom-orange-link {
+    color: var(--riders-orange) !important;
+    font-family: var(--font-montserrat);
+    font-size: 16px;
+    font-style: 'medium';
+    line-height: 26px;
+    font-weight: 500;
+}
+
+.text-nav-all{
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: var(--font-color);
+}
+
+.custom-orange-btn {
+    width: 170px;
+    height: 55px;
+    font-weight: 500;
+    font-style: 'medium';
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 14px;
+    font-family: var(--font-montserrat);
+    background-color: var(--riders-orange);
+    /* border-color: var(--riders-orange); */
+    border-radius: 5px;
+    color: var(--font-white);
+}
+
+
+/* car image logo section */
+.feature-section {
+    background-color: #fff;
+}
+
+.main-feature-heading {
+    font-family: var(--font-amcap);
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 51px;
+    font-style: 'regular';
+    text-transform: uppercase;
+    color: var(--hero-heading);
+}
+
+.description-text {
+    width: 570px;
+    font-family: var(--font-montserrat);
+    font-weight: 300;
+    font-style: 'light';
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--font-color);
+}
+
+.car-image-style {
+    right: 51%;
+    position: absolute;
+}
+
+.heading-car-sec2{
+    left: 45%;
+}
+
+.feature-item {
+    display: flex;
+    font-family: var(--font-montserrat);
+    font-size: 15px;
+    font-weight: 600;
+    font-style: 'medium';
+    line-height: 23px;
+    text-transform: capitalize;
+    color: var(--hero-heading);
+    align-items: center;
+}
+
+.check-icon {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* description section */
+.long-description-section {
+    margin-top: -60px;
+}
+
+.long-description-section .description-text {
+    width: auto;
+    max-width: 100%;
+}
+
+
+/* facts section */
+/* .facts-section {
+    font-family: sans-serif;
+} */
+
+.main-heading-fact {
+    font-family: var(--font-amcap);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: -3%;
+    text-transform: uppercase;
+    color: var(--hero-heading);
+}
+
+.description-text-fact {
+    max-width: 672px;font-family: var(--font-montserrat);
+    font-weight: 300;
+    font-style: 'light';
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--font-color);
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: #FFF6F1;
+    border-radius: 5px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.icon-box.active {
+    background-color: var(--riders-orange);
+    color: #fff;
+}
+
+.fact-number {
+    font-family: var(--font-amcap);
+    font-size: 25px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: 'regular';
+    text-transform: uppercase;
+    color: var(--hero-heading);
+    margin-bottom: 0.25rem;
+}
+
+.plus-sign {
+    font-size: 25px;
+    line-height: 18px;
+    font-family: var(--font-amcap);
+    font-weight: 400;
+    color: var(--riders-orange);
+}
+
+.fact-description {
+    font-family: var(--font-montserrat);
+    font-size: 16px;
+    font-weight: 300;
+    font-style: 'light';
+    line-height: 26px;
+    color: var(--font-color);
+    margin: 0;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+/* footer section */
+.site-footer {
+    background-image: url('src/riders-image/footer-img.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.logo-text-footer{
+    font-family: var(--font-amcap);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 49px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: var(--font-white);
+}
+
+.social-icon-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon-link:hover {
+    background-color: #555;
+    color: white;
+}
+
+.orange-bg {
+    background-color: var(--riders-orange);
+}
+
+.orange-bg:hover {
+    background-color: #e65c00;
+}
+
+.footer-divider {
+    border: 1px solid #3C3C3C;
+    opacity: 1;
+}
+
+.text-orange {
+    color: var(--riders-orange) !important;
+}
+
+.footer-heading {
+    font-family: var(--font-amcap);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 23px;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.footer-links li a {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: var(--font-white);
+    text-decoration: none;
+}
+
+.footer-links li {
+    margin-bottom: 20px;
+}
+
+.footer-links li a:hover {
+    color: var(--riders-orange);
+    text-decoration: underline;
+}
+
+.contact-info {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: var(--font-white);
+    text-decoration: none;
+}
+
+.newsletter-desc {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--font-white);
+    text-decoration: none;
+}
+
+.newsletter-desc-email{
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--font-white);
+    text-decoration: none;
+    width: 434px;
+    height: 16px;
+}
+
+.newsletter-input {
+    background-color: transparent;
+    border: 1px solid var(--font-white);
+    color: white;
+    /* font-size: 0.9rem; */
+    box-shadow: none !important; 
+    width: 434px;
+    height: 55px;
+}
+
+.newsletter-input::placeholder {
+    color: var(--font-white);
+    font-family: var(--font-white);
+    font-size: 13px;
+    line-height: 13px;
+    font-style: 'regular';
+    font-weight: 400;
+    padding-left: 20px;
+    /* opacity: 0.6; */
+}
+
+.custom-orange-btn-footer {
+    background-color: var(--riders-orange);
+    border: none;
+    color: var(--font-white);
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-style: 'medium';
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: capitalize;
+    width: 170px;
+    height: 55px;
+}
+
+.copyright-text {
+    font-family: var(--font-montserrat);
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    font-style: 'regular';
+    color: var(--font-white);
+}
