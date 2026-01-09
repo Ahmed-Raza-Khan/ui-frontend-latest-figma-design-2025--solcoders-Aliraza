@@ -61,6 +61,374 @@
                     </div>
                 </div>
             </section>
+
+
+            <section class="shop-section py-5">
+                <!-- <div class="container py-lg-5"> -->
+                    <div class="row">
+                        <aside class="col-lg-2 col-md-6 ms-5">
+                            <div class="mb-4 search-cards ms-4">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search..." aria-label="Search">
+                                    <div class="input-group-text">
+                                        <img src="src/riders-image/search.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-4 mb-4">
+                                <h5 class="mb-3 range-heading">PRICE</h5>
+                                <input type="range" class="form-range" min="0" max="500" id="priceRange">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <span class="price-range-text">Min.</span>
+                                    <span class="price-range-text">Max.</span>
+                                </div>
+                            </div>
+
+                            <div class="p-4 mb-4">
+                                <h5 class="mb-3 range-heading">CATEGORIES</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <a href="#" class="text-decoration-none d-flex align-items-center gap-3 text-orange-checkon">
+                                            <img src="src/riders-image/iconCheck_on.svg" alt="">
+                                            All Cars
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-decoration-none d-flex align-items-center gap-3 disabled-link">
+                                            <img src="src/riders-image/iconCheck_off.svg" alt="">
+                                            Sedan
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-decoration-none d-flex align-items-center gap-3 disabled-link">
+                                            <img src="src/riders-image/iconCheck_off.svg" alt="">
+                                            Coupe
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-decoration-none d-flex align-items-center gap-3 disabled-link">
+                                            <img src="src/riders-image/iconCheck_off.svg" alt="">
+                                            4x4
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-decoration-none d-flex align-items-center gap-3 disabled-link">
+                                            <img src="src/riders-image/iconCheck_off.svg" alt="">
+                                            AWD
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-decoration-none d-flex align-items-center gap-3 disabled-link">
+                                            <img src="src/riders-image/iconCheck_off.svg" alt="">
+                                            RWD
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-decoration-none d-flex align-items-center gap-3 disabled-link">
+                                            <img src="src/riders-image/iconCheck_off.svg" alt="">
+                                            FWD
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    
+                        <div class="col-lg-8 container">
+                            <div class="row mb-4 align-items-center d-flex align-items-end justify-content-end">
+                                <div class="d-flex justify-content-end">
+                                    <label for="sort-by" class="me-2 d-flex align-items-center">Sort By:</label>
+                                    <select id="sort-by" class="form-select w-auto custom-select-style">
+                                        <option selected>Latest</option>
+                                        <option>Price: Low to High</option>
+                                        <option>Price: High to Low</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-4 align-items-center d-flex justify-content-center">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card car-card h-100">
+                                        <div class="img-container">
+                                            <img src="src/riders-image/shopcar1on.png" class="card-img-top" alt="Ferrari 458 Italia">
+                                        </div>
+
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title car-title">Toyota Camry</h5>
+                                            
+                                            <div class="d-flex align-items-center mb-2 meta-info gap-2">
+                                                <img src="src/riders-image/user-img.png" alt="" class="user-shop-img">
+                                                    <span class="me-3">3 Passengers</span>
+                                                <img src="src/riders-image/gear-transition.png" alt="" class="user-shop-img">
+                                                    <span>Manual</span>
+                                            </div>
+
+                                            <p class="card-text description-text-shop2">
+                                                Lorem Ipsum has been the industry
+                                                standard dummy text ever since...
+                                            </p>
+
+                                            <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                                                <span class="price-text">$200<span class="day-text">/Day</span></span>
+                                                <a href="#" class="btn book-now-btn">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card car-card h-100">
+                                        <div class="img-container">
+                                            <img src="src/riders-image/shopcar2or9.png" class="card-img-top" alt="Ferrari 458 Italia">
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title car-title">BMW 3 Series</h5>
+                                            
+                                            <div class="d-flex align-items-center mb-2 meta-info gap-2">
+                                                <img src="src/riders-image/user-img.png" alt="" class="user-shop-img">
+                                                    <span class="me-3">3 Passengers</span>
+                                                <img src="src/riders-image/gear-transition.png" alt="" class="user-shop-img">
+                                                    <span>Manual</span>
+                                            </div>
+
+                                            <p class="card-text description-text-shop2">
+                                                Lorem Ipsum has been the industry
+                                                standard dummy text ever since...
+                                            </p>
+
+                                            <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                                                <span class="price-text">$200<span class="day-text">/Day</span></span>
+                                                <a href="#" class="btn book-now-btn">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card car-card h-100">
+                                        <div class="img-container">
+                                            <img src="src/riders-image/shopcar3.png" class="card-img-top" alt="Ferrari 458 Italia">
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title car-title">Mercedes-Benz E-Class</h5>
+                                            
+                                            <div class="d-flex align-items-center mb-2 meta-info gap-2">
+                                                <img src="src/riders-image/user-img.png" alt="" class="user-shop-img">
+                                                    <span class="me-3">3 Passengers</span>
+                                                <img src="src/riders-image/gear-transition.png" alt="" class="user-shop-img">
+                                                    <span>Manual</span>
+                                            </div>
+
+                                            <p class="card-text description-text-shop2">
+                                                Lorem Ipsum has been the industry
+                                                standard dummy text ever since...
+                                            </p>
+
+                                            <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                                                <span class="price-text">$200<span class="day-text">/Day</span></span>
+                                                <a href="#" class="btn book-now-btn">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-4 align-items-center d-flex justify-content-center">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card car-card h-100">
+                                        <div class="img-container">
+                                            <img src="src/riders-image/shopcar4.png" class="card-img-top" alt="Ferrari 458 Italia">
+                                        </div>
+
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title car-title">Honda Civic</h5>
+                                            
+                                            <div class="d-flex align-items-center mb-2 meta-info gap-2">
+                                                <img src="src/riders-image/user-img.png" alt="" class="user-shop-img">
+                                                    <span class="me-3">3 Passengers</span>
+                                                <img src="src/riders-image/gear-transition.png" alt="" class="user-shop-img">
+                                                    <span>Manual</span>
+                                            </div>
+
+                                            <p class="card-text description-text-shop2">
+                                                Lorem Ipsum has been the industry
+                                                standard dummy text ever since...
+                                            </p>
+
+                                            <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                                                <span class="price-text">$200<span class="day-text">/Day</span></span>
+                                                <a href="#" class="btn book-now-btn">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card car-card h-100">
+                                        <div class="img-container">
+                                            <img src="src/riders-image/shopcar5.png" class="card-img-top" alt="Ferrari 458 Italia">
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title car-title">Chevrolet Corvette</h5>
+                                            
+                                            <div class="d-flex align-items-center mb-2 meta-info gap-2">
+                                                <img src="src/riders-image/user-img.png" alt="" class="user-shop-img">
+                                                    <span class="me-3">3 Passengers</span>
+                                                <img src="src/riders-image/gear-transition.png" alt="" class="user-shop-img">
+                                                    <span>Manual</span>
+                                            </div>
+
+                                            <p class="card-text description-text-shop2">
+                                                Lorem Ipsum has been the industry
+                                                standard dummy text ever since...
+                                            </p>
+
+                                            <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                                                <span class="price-text">$200<span class="day-text">/Day</span></span>
+                                                <a href="#" class="btn book-now-btn">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card car-card h-100">
+                                        <div class="img-container">
+                                            <img src="src/riders-image/shopcar6.png" class="card-img-top" alt="Ferrari 458 Italia">
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title car-title">Audi A4</h5>
+                                            
+                                            <div class="d-flex align-items-center mb-2 meta-info gap-2">
+                                                <img src="src/riders-image/user-img.png" alt="" class="user-shop-img">
+                                                    <span class="me-3">3 Passengers</span>
+                                                <img src="src/riders-image/gear-transition.png" alt="" class="user-shop-img">
+                                                    <span>Manual</span>
+                                            </div>
+
+                                            <p class="card-text description-text-shop2">
+                                                Lorem Ipsum has been the industry
+                                                standard dummy text ever since...
+                                            </p>
+
+                                            <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                                                <span class="price-text">$200<span class="day-text">/Day</span></span>
+                                                <a href="#" class="btn book-now-btn">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-4 align-items-center d-flex justify-content-center">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card car-card h-100">
+                                        <div class="img-container">
+                                            <img src="src/riders-image/shopcar7.png" class="card-img-top" alt="Ferrari 458 Italia">
+                                        </div>
+
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title car-title">FERRARI 458 ITALIA</h5>
+                                            
+                                            <div class="d-flex align-items-center mb-2 meta-info gap-2">
+                                                <img src="src/riders-image/user-img.png" alt="" class="user-shop-img">
+                                                    <span class="me-3">3 Passengers</span>
+                                                <img src="src/riders-image/gear-transition.png" alt="" class="user-shop-img">
+                                                    <span>Manual</span>
+                                            </div>
+
+                                            <p class="card-text description-text-shop2">
+                                                Lorem Ipsum has been the industry
+                                                standard dummy text ever since...
+                                            </p>
+
+                                            <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                                                <span class="price-text">$200<span class="day-text">/Day</span></span>
+                                                <a href="#" class="btn book-now-btn">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card car-card h-100">
+                                        <div class="img-container">
+                                            <img src="src/riders-image/shopcar8.png" class="card-img-top" alt="Ferrari 458 Italia">
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title car-title">Ford Mustang</h5>
+                                            
+                                            <div class="d-flex align-items-center mb-2 meta-info gap-2">
+                                                <img src="src/riders-image/user-img.png" alt="" class="user-shop-img">
+                                                    <span class="me-3">3 Passengers</span>
+                                                <img src="src/riders-image/gear-transition.png" alt="" class="user-shop-img">
+                                                    <span>Manual</span>
+                                            </div>
+
+                                            <p class="card-text description-text-shop2">
+                                                Lorem Ipsum has been the industry
+                                                standard dummy text ever since...
+                                            </p>
+
+                                            <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                                                <span class="price-text">$200<span class="day-text">/Day</span></span>
+                                                <a href="#" class="btn book-now-btn">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card car-card h-100">
+                                        <div class="img-container">
+                                            <img src="src/riders-image/shopcar2or9.png" class="card-img-top" alt="Ferrari 458 Italia">
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <h5 class="card-title car-title">BMW 3 Series</h5>
+                                            
+                                            <div class="d-flex align-items-center mb-2 meta-info gap-2">
+                                                <img src="src/riders-image/user-img.png" alt="" class="user-shop-img">
+                                                    <span class="me-3">3 Passengers</span>
+                                                <img src="src/riders-image/gear-transition.png" alt="" class="user-shop-img">
+                                                    <span>Manual</span>
+                                            </div>
+
+                                            <p class="card-text description-text-shop2">
+                                                Lorem Ipsum has been the industry
+                                                standard dummy text ever since...
+                                            </p>
+
+                                            <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+                                                <span class="price-text">$200<span class="day-text">/Day</span></span>
+                                                <a href="#" class="btn book-now-btn">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+
+                <nav aria-label="Page navigation example" class="mt-5">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <img src="src/riders-image/orange-arrow-left.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">Page</a></li>
+                        <li class="page-item disabled-5"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">of 80</a></li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#" aria-label="Next" style="background-color: #FF6E1D;">
+                                <img src="src/riders-image/dark-right-arrow.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </section>
         </main>
         
         
