@@ -467,7 +467,7 @@
 .newsletter-input {
     background-color: transparent;
     border: 1px solid var(--font-white);
-    color: white;
+    color: var(--hero-heading);
     /* font-size: 0.9rem; */
     box-shadow: none !important; 
     width: 434px;
@@ -475,7 +475,7 @@
 }
 
 .newsletter-input::placeholder {
-    color: var(--font-white);
+    color: var(--hero-heading);
     font-family: var(--font-white);
     font-size: 13px;
     line-height: 13px;
