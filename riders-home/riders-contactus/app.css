@@ -56,7 +56,7 @@
     color: var(--font-white);
 }
 
-
+/* hero section */
 .about-hero-section {
     position: relative;
     background-color: #fff;
@@ -100,65 +100,114 @@
 }
 
 
-/* card review section */
-.testimonial-card {
-    width: 1300px;
-    height: 293px;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    border: none;
-    padding: 20px;
-    box-shadow: 10px 8px 25px rgba(0, 0, 0, 0.07);
+/* contact us form section */
+.form-contact-us{
+    background-color: #F4F4F4;
+    width: 500px;
+    height: 620px;
 }
 
-.testimonial-card-gray{
-    width: 1300px;
-    height: 293px;
-    border-radius: 10px;
-    border: none;
-    padding: 20px;
-    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); */
-    background-color: #FAFAFA;
-}
-
-.testimonial-img {
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-}
-
-.user-detail , h6{
+.section-title {
     font-family: var(--font-amcap);
-    font-size: 18px;
-    font-style: 'regular';
+    font-size: 45px;
     font-weight: 400;
-    line-height: 18px;
+    font-style: 'regular';
+    line-height: 51px;
     text-transform: uppercase;
     color: var(--hero-heading);
 }
 
-.user-detail , small{
-    font-family: var(--font-montserrat);
-    font-size: 16px;
-    font-style: 'light';
-    font-weight: 300;
-    line-height: 26px;
-    text-transform: capitalize;
-    color: var(--font-color);
+.custom-input {
+    border-radius: 0;
+    border: 1px solid #eee;
+    padding: 0.75rem 1rem;
+    width: 400px;
 }
 
-.quote-icon {
-    width: 56px;
-    height: 40px;
+.custom-input::placeholder {
+    color: #aaa;
 }
 
-.card-text{
+.custom-input:focus {
+    box-shadow: none;
+    border-color: #ff6600;
+}
+
+.message-box {
+    resize: none;
+}
+
+.submit-btn {
+    width: 170px;
+    height: 55px;
+    background-color: var(--riders-orange);
+    border: none;
     font-family: var(--font-montserrat);
     font-weight: 500;
     font-style: 'medium';
-    font-size: 12px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0.75rem 2rem;
     text-transform: capitalize;
+    color: var(--font-white);
+}
+
+.get-in-touch-wrapper {
+    background-color: #fff;
+    width: 600px;
+    position: relative;
+    z-index: 10;
+}
+
+.detail-label {
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    font-style: 'bold';
+    text-transform: capitalize;
+    color: var(--hero-heading);
+}
+
+.detail-text {
+    width: 336px;
+    height: 65px;
+    font-size: 18px;
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: 'regular';
+    line-height: 32px;
+    color: #343434;
+    line-height: 1.4;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-decoration: none;
+}
+
+/* .map-placeholder {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
+    background-image: url('src/riders-image/map.png');
+    background-size: cover;
+    z-index: 1;
+    width: 100%;
+} */
+
+.main-content-row {
+    position: relative;
+    z-index: 50;
+    /* background-color: #000; */
+}
+
+.custom-container {
+    max-width: 1200px;
 }
 
 
