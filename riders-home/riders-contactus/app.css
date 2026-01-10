@@ -101,6 +101,10 @@
 
 
 /* contact us form section */
+.contact-section{
+    height: 983px;
+}
+
 .form-contact-us{
     background-color: #F4F4F4;
     width: 500px;
@@ -154,7 +158,7 @@
 
 .get-in-touch-wrapper {
     background-color: #fff;
-    width: 600px;
+    width: 620px;
     position: relative;
     z-index: 10;
 }
@@ -181,6 +185,19 @@
     line-height: 1.4;
 }
 
+.detail-text-2 {
+    width: 336px;
+    height: 65px;
+    font-size: 18px;
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: 'regular';
+    line-height: 32px;
+    color: #343434;
+    line-height: 1.4;
+    margin-left: 41%;
+}
+
 .social-icon {
     display: flex;
     justify-content: start;
@@ -188,17 +205,21 @@
     text-decoration: none;
 }
 
-/* .map-placeholder {
+.map-placeholder {
     position: absolute;
+    top: 166%;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 400px;
+    height: 500px;
     background-image: url('src/riders-image/map.png');
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
     background-size: cover;
+    background-position: left;
     z-index: 1;
     width: 100%;
-} */
+}
 
 .main-content-row {
     position: relative;
