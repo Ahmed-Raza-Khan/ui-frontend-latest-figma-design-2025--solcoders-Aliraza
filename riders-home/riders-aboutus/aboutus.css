@@ -398,26 +398,28 @@
     font-weight: 400;
     font-style: 'regular';
     font-size: 16px;
-    line-height: 16px;
+    line-height: 22px;
     color: var(--font-white);
     text-decoration: none;
-    width: 434px;
-    height: 16px;
+    max-width: 434px;
+    width: 100%;
+    /* height: 16px; */
 }
 
 .newsletter-input {
     background-color: transparent;
     border: 1px solid var(--font-white);
-    color: white;
+    color: var(--hero-heading);
     /* font-size: 0.9rem; */
     box-shadow: none !important; 
-    width: 434px;
+    width: 100%;
+    max-width: 434px;
     height: 55px;
 }
 
 .newsletter-input::placeholder {
     color: var(--font-white);
-    font-family: var(--font-white);
+    font-family: var(--font-montserrat);
     font-size: 13px;
     line-height: 13px;
     font-style: 'regular';
@@ -447,4 +449,89 @@
     font-weight: 400;
     font-style: 'regular';
     color: var(--font-white);
+}
+    
+@media (max-width: 992px) {
+
+    .logo-text-footer {
+        font-size: 38px;
+        line-height: 40px;
+    }
+
+    .footer-heading {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .newsletter-desc-email {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .copyright-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .site-footer {
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+        text-align: center !important;
+    }
+
+    .footer-heading {
+        margin-bottom: 15px;
+    }
+
+    .footer-links li {
+        margin-bottom: 12px;
+    }
+
+    .contact-info {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .newsletter-desc-email {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .custom-orange-btn-footer {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .logo-text-footer {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .social-icon-link {
+        width: 36px;
+        height: 36px;
+    }
+
+    .newsletter-input {
+        height: 50px;
+    }
+
+    .custom-orange-btn-footer {
+        height: 50px;
+        font-size: 13px;
+    }
+
+    .copyright-text {
+        font-size: 13px;
+        line-height: 18px;
+    }
 }

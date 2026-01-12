@@ -160,8 +160,10 @@
 
 /* card review section */
 .testimonial-card {
-    width: 1300px;
-    height: 293px;
+    max-width: 1320px;
+    width: 100%;
+    height: auto;
+    min-height: 293px;
     background-color: #FFFFFF;
     border-radius: 10px;
     border: none;
@@ -170,10 +172,13 @@
 }
 
 .testimonial-card-gray{
-    width: 1300px;
-    height: 293px;
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    min-height: 293px;
     border-radius: 10px;
     border: none;
+    margin: 0 auto 24px;
     padding: 20px;
     /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); */
     background-color: #FAFAFA;
@@ -217,6 +222,97 @@
     font-size: 12px;
     line-height: 26px;
     text-transform: capitalize;
+    word-wrap: break-word;
+}
+
+@media (max-width: 992px) {
+
+    .testimonial-card,
+    .testimonial-card-gray {
+        padding: 18px;
+        min-height: auto;
+    }
+
+    .testimonial-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .quote-icon {
+        width: 46px;
+        height: 32px;
+    }
+
+    .user-detail h6,
+    h6 {
+        font-size: 16px;
+    }
+
+    .user-detail small,
+    small {
+        font-size: 14px;
+    }
+
+    .card-text {
+        font-size: 13px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .testimonial-card,
+    .testimonial-card-gray {
+        padding: 16px;
+        border-radius: 8px;
+    }
+
+    .testimonial-img {
+        width: 54px;
+        height: 54px;
+    }
+
+    .quote-icon {
+        width: 40px;
+        height: 28px;
+    }
+
+    .card-text {
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .testimonial-card,
+    .testimonial-card-gray {
+        padding: 14px;
+    }
+
+    .d-flex.align-items-center {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .quote-icon {
+        margin-left: auto;
+    }
+
+    .user-detail h6,
+    h6 {
+        font-size: 15px;
+    }
+
+    .user-detail small,
+    small {
+        font-size: 13px;
+    }
+
+    .card-text {
+        font-size: 11.5px;
+        line-height: 21px;
+    }
 }
 
 
@@ -328,11 +424,12 @@
     font-weight: 400;
     font-style: 'regular';
     font-size: 16px;
-    line-height: 16px;
+    line-height: 22px;
     color: var(--font-white);
     text-decoration: none;
-    width: 434px;
-    height: 16px;
+    max-width: 434px;
+    width: 100%;
+    /* height: 16px; */
 }
 
 .newsletter-input {
@@ -341,7 +438,8 @@
     color: var(--hero-heading);
     /* font-size: 0.9rem; */
     box-shadow: none !important; 
-    width: 434px;
+    width: 100%;
+    max-width: 434px;
     height: 55px;
 }
 
@@ -377,4 +475,89 @@
     font-weight: 400;
     font-style: 'regular';
     color: var(--font-white);
+}
+    
+@media (max-width: 992px) {
+
+    .logo-text-footer {
+        font-size: 38px;
+        line-height: 40px;
+    }
+
+    .footer-heading {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .newsletter-desc-email {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .copyright-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .site-footer {
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+        text-align: center !important;
+    }
+
+    .footer-heading {
+        margin-bottom: 15px;
+    }
+
+    .footer-links li {
+        margin-bottom: 12px;
+    }
+
+    .contact-info {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .newsletter-desc-email {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .custom-orange-btn-footer {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .logo-text-footer {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .social-icon-link {
+        width: 36px;
+        height: 36px;
+    }
+
+    .newsletter-input {
+        height: 50px;
+    }
+
+    .custom-orange-btn-footer {
+        height: 50px;
+        font-size: 13px;
+    }
+
+    .copyright-text {
+        font-size: 13px;
+        line-height: 18px;
+    }
 }
