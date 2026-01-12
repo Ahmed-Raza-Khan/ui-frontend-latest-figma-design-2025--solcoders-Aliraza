@@ -15,12 +15,19 @@
     --hero-heading: #111111;
 }
 
+.navbar{
+    padding: 0.5rem 0;
+}
+
+.navbar-nav{
+    gap: 8px;
+}
+
 .logo-main{
     font-family: var(--font-amcap);
     font-weight: 400;
     font-style: 'regular';
     font-size: 30px;
-    
 }
 
 .custom-orange-link {
@@ -55,6 +62,68 @@
     /* border-color: var(--riders-orange); */
     border-radius: 5px;
     color: var(--font-white);
+}
+
+@media (max-width: 992px) {
+
+    .logo-main {
+        font-size: 26px;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+
+    .custom-orange-btn {
+        width: 150px;
+        height: 50px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 0.75rem 0;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        padding-top: 15px;
+        gap: 12px;
+    }
+
+    .navbar-collapse {
+        background: white;
+        border-radius: 10px;
+        padding: 15px 0;
+        margin-top: 10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .custom-orange-btn {
+        width: 100%;
+        max-width: 260px;
+        height: 50px;
+        margin: 10px auto 0;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .logo-main {
+        font-size: 22px;
+    }
+
+    .text-nav-all,
+    .custom-orange-link {
+        font-size: 15px;
+    }
+
+    .custom-orange-btn {
+        height: 48px;
+        font-size: 13px;
+    }
 }
 
 
