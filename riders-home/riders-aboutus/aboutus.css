@@ -69,6 +69,7 @@
     height: 300px;
     position: relative;
     z-index: 1;
+    width: 100%;
 }
 
 .main-about-heading {
@@ -97,6 +98,62 @@
 .orange-curve-divider {
     position: absolute;
     rotate: calc(-3deg);
+}
+
+@media (max-width: 1024px) {
+    .about-hero-section {
+        height: 450px;
+        padding-top: 3rem;
+    }
+    .main-about-heading {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .orange-curve-divider {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        rotate: calc(-0deg);
+    }
+    .orange-curve-divider img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-hero-section {
+        width: 100%;
+        height: 300px;
+        min-height: unset;
+    }
+    .main-about-heading {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .about-description-text {
+        font-size: 14px;
+    }
+    .hero-content-container {
+        height: auto;
+        min-height: 200px;
+    }
+    .orange-curve-divider {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        top: 45%;
+        left: 50%;
+        rotate: calc(-0deg);
+        transform: translateX(-50%);
+    }
+    .orange-curve-divider img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 
