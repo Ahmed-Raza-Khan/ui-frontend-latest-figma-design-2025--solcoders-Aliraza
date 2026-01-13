@@ -546,7 +546,7 @@
     font-style: 'regular';
     color: var(--font-white);
 }
-
+    
 @media (max-width: 992px) {
 
     .logo-text-footer {
