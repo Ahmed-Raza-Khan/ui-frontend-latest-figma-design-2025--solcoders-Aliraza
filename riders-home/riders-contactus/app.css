@@ -316,7 +316,19 @@
     line-height: 1.4;
 }
 
-.detail-text-2 {
+.detail-text-main-address{
+    width: 320px;
+    height: auto;
+    font-size: 17px;
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: 'regular';
+    line-height: 1.4;
+    color: #333;
+    line-height: 1.4;
+}
+
+.detail-text-main-address-2{
     width: auto;
     height: auto;
     font-size: 18px;
@@ -325,9 +337,20 @@
     font-style: 'regular';
     line-height: 1.4;
     color: #343434;
-    line-height: 1.4;
-    margin-left: 0;
+    margin-left: 44%;
 }
+
+/* .detail-text-2 {
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-style: 'regular';
+    color: #343434;
+    line-height: 1.4;
+    margin-left: 44%;
+} */
 
 .social-icon {
     display: flex;
@@ -362,8 +385,8 @@
     max-width: 1200px;
 }
 
-@media (min-width: 992px) {
-
+@media (min-width: 992px) and (max-width: 1024px){
+    
     .contact-section{
         width: 100%;
         min-width: unset;
@@ -380,8 +403,47 @@
         height: 50px;
     }
 
+    .detail-text {
+        width: auto;
+        height: auto;
+        font-size: 15px;
+        font-family: var(--font-montserrat);
+        font-weight: 400;
+        font-style: 'regular';
+        line-height: 1.4;
+        color: #343434;
+    }
+
+    .detail-text-main-address{
+        width: auto;
+        height: auto;
+        display: contents;
+        font-size: 13px;
+        font-family: var(--font-montserrat);
+        font-weight: 400;
+        font-style: 'regular';
+        line-height: 1.4;
+        color: #343434;
+    }
+
+    .detail-text-main-address-2{
+        width: auto;
+        height: auto;
+        font-size: 15px;
+        font-family: var(--font-montserrat);
+        font-weight: 400;
+        font-style: 'regular';
+        line-height: 1.4;
+        color: #343434;
+        margin-left: 49%;
+    }
+
     .detail-label {
         font-size: 20px;
+    }
+
+    .map-placeholder{
+        height: 452px;
     }
 }
 
@@ -431,7 +493,38 @@
         min-width: 720px;
     }
 
-    .detail-text-2{
+    .detail-text {
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        font-family: var(--font-montserrat);
+        font-weight: 400;
+        font-style: 'regular';
+        line-height: 1.4;
+        color: #343434;
+    }
+
+    .detail-text-main-address{
+        width: auto;
+        height: auto;
+        display: contents;
+        font-size: 18px;
+        font-family: var(--font-montserrat);
+        font-weight: 400;
+        font-style: 'regular';
+        line-height: 1.4;
+        color: #343434;
+    }
+
+    .detail-text-main-address-2{
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        font-family: var(--font-montserrat);
+        font-weight: 400;
+        font-style: 'regular';
+        line-height: 1.4;
+        color: #343434;
         margin-left: 32%;
     }
 
@@ -446,7 +539,7 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 425px) {
     .section-title {
         font-size: 26px;
         line-height: 32px;
@@ -498,18 +591,52 @@
         position: relative;
     }
 
-    .detail-text-2{
+    /* .detail-text-2{
         margin-left: 46%;
-    }
+    } */
 
     .social-icon {
         justify-content: start;
         margin-top: 30px;
     }
 
-    .detail-text,
-    .detail-text-2 {
-        font-size: 12px;
+    .detail-text{
+        font-size: 13px;
+    }
+
+    .detail-text {
+        width: auto;
+        height: auto;
+        font-family: var(--font-montserrat);
+        font-weight: 400;
+        font-style: 'regular';
+        line-height: 1.4;
+        color: #343434;
+    }
+
+    .detail-text-main-address{
+        width: auto;
+        height: auto;
+        display: contents;
+        font-size: 13px;
+        font-family: var(--font-montserrat);
+        font-weight: 400;
+        font-style: 'regular';
+        line-height: 1.4;
+        color: #343434;
+
+    }
+
+    .detail-text-main-address-2{
+        width: auto;
+        height: auto;
+        font-size: 13px;
+        font-family: var(--font-montserrat);
+        font-weight: 400;
+        font-style: 'regular';
+        line-height: 1.4;
+        color: #343434;
+        margin-left: 45%;
     }
 
     .map-placeholder {
