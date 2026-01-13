@@ -229,13 +229,15 @@
 
 /* contact us form section */
 .contact-section{
-    height: 983px;
+    min-height: 970px;
+    position: relative;
 }
 
 .form-contact-us{
     background-color: #F4F4F4;
-    width: 500px;
-    height: 620px;
+    max-width: 500px;
+    width: 100%;
+    min-height: 620px;
 }
 
 .section-title {
@@ -252,7 +254,8 @@
     border-radius: 0;
     border: 1px solid #eee;
     padding: 0.75rem 1rem;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
 }
 
 .custom-input::placeholder {
@@ -285,7 +288,8 @@
 
 .get-in-touch-wrapper {
     background-color: #fff;
-    width: 620px;
+    max-width: 620px;
+    width: 100%;
     position: relative;
     z-index: 10;
 }
@@ -301,28 +305,28 @@
 }
 
 .detail-text {
-    width: 336px;
-    height: 65px;
+    width: auto;
+    height: auto;
     font-size: 18px;
     font-family: var(--font-montserrat);
     font-weight: 400;
     font-style: 'regular';
-    line-height: 32px;
+    line-height: 1.4;
     color: #343434;
     line-height: 1.4;
 }
 
 .detail-text-2 {
-    width: 336px;
-    height: 65px;
+    width: auto;
+    height: auto;
     font-size: 18px;
     font-family: var(--font-montserrat);
     font-weight: 400;
     font-style: 'regular';
-    line-height: 32px;
+    line-height: 1.4;
     color: #343434;
     line-height: 1.4;
-    margin-left: 41%;
+    margin-left: 0;
 }
 
 .social-icon {
@@ -333,8 +337,8 @@
 }
 
 .map-placeholder {
-    position: absolute;
-    top: 166%;
+    position: relative;
+    margin-top: -10%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -356,6 +360,161 @@
 
 .custom-container {
     max-width: 1200px;
+}
+
+@media (min-width: 992px) {
+
+    .contact-section{
+        width: 100%;
+        min-width: unset;
+        /* background-color: #343434; */
+    }
+
+    .section-title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .submit-btn {
+        width: 190px;
+        height: 50px;
+    }
+
+    .detail-label {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .contact-section {
+        position: relative;
+    }
+
+    .form-contact-us{
+        width: 100%;
+        max-width: 740px;
+        height: 100%;
+        min-height: 570px;
+    }
+
+    form div input , form div textarea{
+        width: 100%;
+        min-width: 700px;
+    }
+
+    .main-content-row {
+        gap: 30px;
+    }
+
+    .section-title {
+        font-size: 42px;
+        line-height: 38px;
+        text-align: center;
+    }
+
+    .submit-btn {
+        width: 100%;
+        max-width: 160px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .contact-form-wrapper,
+    .get-in-touch-wrapper {
+        padding: 30px 20px !important;
+    }
+
+    .get-in-touch-wrapper{
+        width: 100%;
+        /* background-color: #333; */
+        min-width: 720px;
+    }
+
+    .detail-text-2{
+        margin-left: 32%;
+    }
+
+    .social-icon {
+        justify-content: start;
+        margin-top: 30px;
+    }
+
+    .map-placeholder{
+        height: 100%;
+        min-height: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .form-contact-us{
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        min-height: 570px;
+    }
+
+    form div input , form div textarea{
+        width: 100%;
+        min-width: 360px;
+    }
+
+    .main-content-row {
+        gap: 30px;
+    }
+
+    .section-title {
+        font-size: 42px;
+        line-height: 38px;
+        text-align: center;
+    }
+
+    .submit-btn {
+        width: 100%;
+        max-width: 160px;
+        height: 50px;
+    }
+
+    .contact-form-wrapper,
+    .get-in-touch-wrapper {
+        padding: 30px 20px !important;
+    }
+
+    .get-in-touch-wrapper{
+        width: 100%;
+    }
+
+    .detail-label {
+        font-size: 16px;
+    }
+
+    .detail-label span{
+        right: 1%;
+        position: relative;
+    }
+
+    .detail-text-2{
+        margin-left: 46%;
+    }
+
+    .social-icon {
+        justify-content: start;
+        margin-top: 30px;
+    }
+
+    .detail-text,
+    .detail-text-2 {
+        font-size: 12px;
+    }
+
+    .map-placeholder {
+        height: 150px;
+    }
 }
 
 
