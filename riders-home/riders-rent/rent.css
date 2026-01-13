@@ -437,6 +437,15 @@
     color: #6c757d;
 }
 
+.book-now-btn{
+    font-size: 13px;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .pagination .page-item .page-link {
     color: var(--text-color);
     border-radius: 5px;
@@ -566,131 +575,6 @@
         justify-content: center;
     }
 }
-
-/* @media (min-width: 1400px) {
-    .shop-section .container {
-        max-width: 1320px;
-    }
-
-    .img-container {
-        height: 210px;
-    }
-}
-
-@media (max-width: 992px) {
-
-    aside {
-        width: 100%;
-        margin-left: 0 !important;
-        order: 2;
-    }
-
-    .search-cards {
-        width: 100%;
-    }
-
-    .shop-section .col-lg-8 {
-        width: 100%;
-        order: 1;
-    }
-
-    .img-container {
-        height: 170px;
-    }
-
-    .car-title {
-        font-size: 16px;
-    }
-
-    .price-text {
-        font-size: 1.25rem;
-    }
-
-    .book-now-btn {
-        width: 100px;
-        height: 34px;
-        font-size: 11px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    aside {
-        padding: 0 12px;
-    }
-
-    .img-container {
-        height: 160px;
-    }
-
-    .meta-info {
-        font-size: 11px;
-    }
-
-    .description-text-shop2 {
-        font-size: 12px;
-        line-height: 20px;
-    }
-
-    .price-text {
-        font-size: 1.15rem;
-    }
-
-    .book-now-btn {
-        width: 95px;
-        height: 32px;
-    }
-
-    .pagination {
-        flex-wrap: wrap;
-        gap: 6px;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .img-container {
-        height: 140px;
-        padding: 12px;
-    }
-
-    .car-title {
-        font-size: 14px;
-    }
-
-    .meta-info span {
-        font-size: 10px;
-    }
-
-    .description-text-shop2 {
-        font-size: 11px;
-        line-height: 18px;
-    }
-
-    .price-text {
-        font-size: 1rem;
-    }
-
-    .day-text {
-        font-size: 12px;
-    }
-
-    .book-now-btn {
-        width: 88px;
-        height: 30px;
-        font-size: 10px;
-    }
-
-    .pagination .page-link {
-        padding: 6px 10px;
-        font-size: 13px;
-    }
-} */
 
 
 /* footer section */
