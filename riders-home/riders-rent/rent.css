@@ -323,7 +323,6 @@
     height: 32px;
 }
 
-
 .card {
     border: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -529,6 +528,15 @@
         transition: 0.3s;
     }
 
+    .price-text{
+        font-size: 15px;
+    }
+
+    .book-now-btn{
+        width: 50%;
+        font-size: 11px;
+    }
+
     #filterToggle:checked ~ .shop-sidebar {
         left: -47px;
         height: 100%;
@@ -567,6 +575,46 @@
 
     .book-now-btn {
         width: 80px;
+        height: 28px;
+        font-size: 9px;
+        padding: 6px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .img-container {
+        height: 140px;
+        padding: 12px;
+    }
+
+    .car-title {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .meta-info {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .description-text-shop2 {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .price-text {
+        font-size: 13px;
+    }
+
+    .day-text{
+        font-size: 14px;
+    }
+
+    .book-now-btn {
+        width: 70px;
         height: 28px;
         font-size: 9px;
         padding: 6px 10px;
