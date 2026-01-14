@@ -206,6 +206,157 @@ h1 span{
     right: 5%;
 }
 
+@media (max-width: 1200px) {
+    .main-heading,
+    h1 span {
+        font-size: 68px;
+        line-height: 72px;
+    }
+
+    .car-image {
+        width: 900px;
+        left: 40%;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    .orange-curves{
+        margin-top: 10%;
+        margin-left: 6px;
+    }
+
+    .slider-dots-orange-3{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .hero-section {
+        height: auto;
+        padding: 80px 0 120px;
+    }
+
+    .main-heading,
+    h1 span {
+        font-size: 52px;
+        line-height: 58px;
+        text-align: center;
+    }
+
+    .description {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 90px;
+    }
+
+    .custom-orange-btn-book {
+        margin: 0 auto;
+        display: block;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .car-section-image {
+        position: relative;
+        top: auto;
+        margin-top: 60px;
+        margin-left: 30%;
+        text-align: center;
+    }
+
+    .car-image {
+        position: relative;
+        width: 85%;
+        left: 0;
+        bottom: 0;
+        margin: 0 auto;
+    }
+
+    .orange-curves {
+        display: none;
+    }
+
+    .slider-dots-orange-3{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .hero-section {
+        padding: 60px 0 80px;
+    }
+
+    .main-heading,
+    h1 span {
+        font-size: 38px;
+        line-height: 42px;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 50%;
+    }
+
+    .custom-orange-btn-book {
+        width: 100%;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin-bottom: 0%; */
+    }
+
+    .car-image {
+        width: 100%;
+    }
+
+    .slider-dots-orange-3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-heading,
+    h1 span {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .description{
+        margin-bottom: 55%;
+    }
+
+    .custom-orange-btn-book{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .car-image{
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    .slider-dots-orange-3{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+}
+
 
 /* step section */
 .text-orange {
