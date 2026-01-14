@@ -232,6 +232,7 @@
 .feature-section {
     background-color: #fff;
     margin-top: -10%;
+    padding-top: clamp(80px, 10vw, 140px);
 }
 
 .main-feature-heading {
@@ -309,42 +310,34 @@
     .heading-car-sec2 {
         position: relative;
         left: 0;
+        width: 100%;
         text-align: center;
     }
 
-    .main-feature-heading{
-        width: 100%;
-        min-width: 650px;
+    .main-feature-heading {
         font-size: 36px;
         line-height: 44px;
-        background-color: #3C3C3C;
+        max-width: 100%;
+        margin: auto;
     }
 
     .description-text {
         width: 100%;
-        min-width: 650px;
-        margin: auto;
+        max-width: 90%;
+        margin: 0 auto;
     }
 
-    .feature-list{
-        width: 100%;
-        min-width: 650px;
-    }
-
-    /* .long-description-section-2{
-        margin-top: -5%;
-        width: 100%;
-        min-width: 400px;
-        margin: auto;
-    } */
-
-    .long-description-section .description-text {
-        width: 100%;
-        min-width: 10%;
+    .feature-list {
+        max-width: 90%;
+        margin: 30px auto 0;
     }
 }
 
 @media (max-width: 576px) {
+
+    .car-image-style{
+        right: 12px;
+    }
 
     .main-feature-heading {
         font-size: 28px;
@@ -354,28 +347,77 @@
     .description-text {
         font-size: 14px;
         line-height: 22px;
+        max-width: 100%;
     }
 
     .feature-list .col-sm-6 {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin-left: 12%;
     }
 
     .feature-item {
+        justify-content: center;
         font-size: 14px;
     }
 
     .check-icon {
         width: 24px;
         height: 24px;
-        margin-left: 20px;
     }
 
     .long-description-section {
-        padding: 0 10px;
+        margin-top: -20px;
+        padding: 0 12px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .car-image-style{
+        right: 12px;
+    }
+
+    .main-feature-heading {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .description-text {
+        font-size: 13px;
+    }
+
+    .feature-list .col-sm-6 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin-left: 7%;
+    }
+
+    .feature-item {
+        font-size: 12px;
     }
 
     .long-description-section{
-        margin-top: -10%;
+        margin-top: -12%;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .main-feature-heading {
+        font-size: 52px;
+        line-height: 60px;
+    }
+
+    .description-text {
+        font-size: 17px;
+        line-height: 28px;
     }
 }
 
