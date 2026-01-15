@@ -968,7 +968,7 @@ h1 span{
 }
 
 @media (max-width: 380px) {
-
+    
     .img-container {
         height: 165px;
     }
@@ -980,7 +980,7 @@ h1 span{
     .car-title {
         font-size: 13px;
     }
-
+    
     .description-text-shop2 {
         font-size: 12px;
         line-height: 18px;
@@ -989,11 +989,11 @@ h1 span{
     .price-text {
         font-size: 15px;
     }
-
+    
     .day-text{
         font-size: 16px;
     }
-
+    
     .book-now-btn {
         width: 140px;
         height: 40px;
@@ -1019,15 +1019,17 @@ h1 span{
 .hero-content-box {
     background-color: var(--riders-orange);
     border-radius: 10px;
-    overflow: hidden;
+    overflow: visible;
+    position: relative;
     /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
     margin-left: auto;
     margin-right: auto;
 }
 
-/* .context-box-bok-car{
-    left: 20%;
-} */
+.context-box-bok-car {
+    position: relative;
+    z-index: 10;
+}
 
 .main-heading-car-book {
     font-family: var(--font-amcap);
@@ -1037,8 +1039,9 @@ h1 span{
     line-height: 51px;
     text-transform: uppercase;
     color: var(--font-white);
-    width: 567px;
+    width: 520px;
     height: 102px;
+    margin-bottom: 12%;
 }
 
 .orange-text-book{
@@ -1079,11 +1082,135 @@ h1 span{
 }
 
 .car-image-style-book {
-    width: 1094px;
-    left: 40%;
-    /* height: auto; */
-    /* z-index: 11; */
+    position: absolute;
+    right: -80px;
+    top: -20px;
+    /* left: 40%; */
+    /* right: -280px; */
+    /* bottom: 0; */
+    width: 600px;
+    max-width: none;
+    z-index: 5;
+    pointer-events: none;
 }
+
+@media (max-width: 992px) {
+    .hero-content-box {
+        padding: 40px 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .context-box-bok-car {
+        padding: 20px;
+    }
+
+    .main-heading-car-book,
+    .orange-text-book {
+        width: 100%;
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .description-text-book {
+        max-width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .custom-dark-btn {
+        margin: 20px auto 0 auto;
+    }
+
+    .car-image-style-book {
+        position: relative;
+        width: 100%;
+        max-width: 750px;
+        margin-top: 30px;
+        right: 0;
+        top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .main-heading-car-book,
+    .orange-text-book {
+        width: 100%;
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 20%;
+    }
+
+    .description-text-book {
+        font-size: 14px;
+        line-height: 22px;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .custom-dark-btn {
+        width: 190px;
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .car-image-style-book {
+        max-width: 100%;
+        margin-top: -5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-heading-car-book,
+    .orange-text-book {
+        width: 100%;
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .description-text-book {
+        width: 100%;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .custom-dark-btn {
+        width: 140px;
+        height: 40px;
+        font-size: 11px;
+    }
+
+    .car-image-style-book{
+        margin-top: -30px;
+    }
+}
+
+@media (max-width: 380px) {
+    .main-heading-car-book,
+    .orange-text-book {
+        width: 100%;
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .description-text-book {
+        width: 100%;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .custom-dark-btn {
+        width: 140px;
+        height: 40px;
+        font-size: 11px;
+    }
+
+    .car-image-style-book{
+        margin-top: -30px;
+    }
+}
+
 
 /* about us section */
 .main-section-heading-aboutus {
