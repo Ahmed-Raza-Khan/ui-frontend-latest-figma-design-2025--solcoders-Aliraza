@@ -1083,15 +1083,88 @@ h1 span{
 
 .car-image-style-book {
     position: absolute;
-    right: -80px;
-    top: -20px;
-    /* left: 40%; */
-    /* right: -280px; */
-    /* bottom: 0; */
-    width: 600px;
+    right: -100px;
+    width: 920px;
     max-width: none;
     z-index: 5;
     pointer-events: none;
+}
+
+@media (max-width:1199px){
+    .hero-content-box {
+        background-color: var(--riders-orange);
+        border-radius: 10px;
+        overflow: visible;
+        position: relative;
+        /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8); */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .context-box-bok-car {
+        position: relative;
+        z-index: 10;
+    }
+
+    .main-heading-car-book {
+        font-family: var(--font-amcap);
+        font-weight: 400;
+        font-style: 'regular';
+        font-size: 45px;
+        line-height: 51px;
+        text-transform: uppercase;
+        color: var(--font-white);
+        width: 520px;
+        height: 102px;
+    }
+
+    .orange-text-book{
+        color: var(--hero-heading);
+        font-family: var(--font-amcap);
+        font-weight: 400;
+        font-style: 'regular';
+        font-size: 45px;
+        line-height: 51px;
+        text-transform: uppercase;
+    }
+
+    .description-text-book {
+        font-family: var(--font-montserrat);
+        font-size: 16px;
+        font-weight: 300;
+        font-style: 'light';
+        line-height: 26px;
+        width: 330px;
+        color: var(--font-white);
+    }
+
+    .custom-dark-btn {
+        background-color: var(--hero-heading);
+        border: none;
+        color: var(--font-white);
+        border-radius: 5px;
+        font-family: var(--font-montserrat);
+        font-size: 12px;
+        line-height: 14px;
+        font-style: 'medium';
+        font-weight: 500;
+        text-transform: capitalize;
+        width: 150px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .car-image-style-book {
+        position: absolute;
+        right: -100px;
+        top: 10%;
+        width: 700px;
+        max-width: none;
+        z-index: 5;
+        pointer-events: none;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1115,7 +1188,7 @@ h1 span{
 
     .description-text-book {
         max-width: 100%;
-        margin-bottom: 10%;
+        margin-bottom: 20%;
     }
 
     .custom-dark-btn {
