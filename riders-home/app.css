@@ -443,6 +443,88 @@ h1 span{
     /* filter: brightness(0) invert(1); */
 }
 
+.services-section {
+    overflow-x: hidden;
+}
+
+.main-section-description,
+.feature-description {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 992px) {
+
+    .main-section-heading {
+        font-size: 38px;
+        line-height: 42px;
+        text-align: center;
+    }
+
+    .main-section-description {
+        font-size: 15px;
+        line-height: 24px;
+        text-align: center;
+        margin-left: 0;
+        padding: 0 20px;
+    }
+
+    .feature-heading {
+        font-size: 22px;
+        line-height: 1;
+    }
+
+    .feature-description {
+        font-size: 15px;
+        line-height: 24px;
+        margin-left: 0;
+        padding: 0 10px;
+    }
+
+    .icon-box {
+        width: 90px;
+        height: 85px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .main-section-heading {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .main-section-description {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0 15px;
+    }
+
+    .feature-heading {
+        font-size: 20px;
+    }
+
+    .feature-description {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0 12px;
+    }
+
+    .icon-box {
+        width: 75px;
+        height: 70px;
+    }
+
+    .custom-icon,
+    .custom-icon-white {
+        width: 80%;
+        height: 80%;
+    }
+}
+
 
 /* car image logo section */
 .feature-section {
@@ -507,6 +589,76 @@ h1 span{
     background-color: var(--riders-orange);
     color: var(--font-white);
     border: none;
+}
+
+@media (max-width: 991px) {
+
+    .feature-section {
+        padding: 60px 0;
+    }
+
+    .car-image-style {
+        position: relative;
+        right: 13px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .heading-car-sec2 {
+        left: 0;
+        text-align: center;
+    }
+
+    .main-feature-heading {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .description-text {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .feature-list {
+        text-align: left;
+    }
+
+    .feature-item , img span{
+        font-size: 14px;
+        font-family: var(--font-montserrat);
+    }
+
+    .custom-orange-btn-car-sec {
+        margin: 0 auto;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .car-image-style{
+        right: 33px;
+    }
+
+    .main-feature-heading {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .description-text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .feature-item {
+        font-size: 14px;
+    }
+
+    .check-icon {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 
@@ -601,7 +753,7 @@ h1 span{
     font-family: var(--font-montserrat);
     font-weight: 500;
     font-style: 'medium';
-    font-size: 10px;
+    font-size: 12px;
     line-height: 10px;
     text-transform: capitalize;
     background-color: var(--riders-orange);
@@ -609,8 +761,11 @@ h1 span{
     color: var(--font-white);
     padding: 8px 16px;
     border-radius: 4px;
-    width: 95px;
-    height: 32px;
+    width: 110px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* .book-now-btn:hover {
@@ -631,6 +786,195 @@ h1 span{
     border-radius: 5px;
     width: 190px;
     height: 50px;
+}
+
+@media (max-width: 1199px) {
+
+    .img-container {
+        height: 170px;
+    }
+
+    .car-title {
+        font-size: 16px;
+    }
+
+    .description-text-shop2 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .price-text {
+        font-size: 15px;
+    }
+
+    .book-now-btn {
+        width: 100px;
+        height: 36px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .img-container {
+        height: 190px;
+    }
+
+    .car-title {
+        font-size: 20px;
+    }
+
+    .meta-info {
+        font-size: 11px;
+    }
+
+    .description-text-shop2 {
+        font-size: 12px;
+    }
+
+    .price-text {
+        font-size: 14px;
+    }
+
+    .day-text {
+        font-size: 13px;
+    }
+
+    .book-now-btn {
+        width: 95px;
+        height: 34px;
+    }
+
+    .custom-orange-btn-shop {
+        width: 170px;
+        height: 46px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .img-container {
+        height: 280px;
+    }
+
+    .car-title {
+        font-size: 22px;
+        line-height: 1.6;
+    }
+
+    .meta-info {
+        font-size: 15px;
+        gap: 20px;
+        line-height: 20px;
+    }
+
+    .meta-info img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .description-text-shop2 {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+    .price-text {
+        font-size: 21px;
+    }
+
+    .day-text {
+        font-size: 20px;
+    }
+
+    .book-now-btn {
+        width: 180px;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .custom-orange-btn-shop {
+        width: 230px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .img-container {
+        height: 165px;
+    }
+
+    .card-img-top{
+        padding: 0px 18%;
+    }
+
+    .car-title {
+        font-size: 13px;
+    }
+
+    .description-text-shop2 {
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    .price-text {
+        font-size: 13px;
+    }
+
+    .book-now-btn {
+        width: 85px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .custom-orange-btn-shop {
+        width: 190px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .img-container {
+        height: 165px;
+    }
+
+    .card-img-top{
+        padding: 0px 10%;
+    }
+
+    .car-title {
+        font-size: 13px;
+    }
+
+    .description-text-shop2 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .price-text {
+        font-size: 15px;
+    }
+
+    .book-now-btn {
+        width: 140px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .custom-orange-btn-shop {
+        width: 190px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20%;
+    }
 }
 
 
