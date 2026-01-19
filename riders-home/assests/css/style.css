@@ -1380,6 +1380,201 @@ h1 span{
     margin-top: 2px;
 }
 
+.carousel-item {
+    transition: transform 0.9s ease-in-out;
+}
+
+/* .active-card {
+    border: 2px solid var(--riders-orange);
+} */
+
+.active-card .user-name {
+    color: var(--riders-orange);
+}
+
+.active-card .icon-orange {
+    animation: quotePulse 1.5s infinite ease-in-out;
+}
+
+@keyframes quotePulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    opacity: 1;
+    border: none;
+    margin: 0 5px;
+}
+
+.carousel-indicators .active {
+    background-color: var(--riders-orange);
+}
+
+#testimonialCarousel {
+    overflow: hidden;
+}
+
+#testimonialCarousel .carousel-inner {
+    display: flex;
+    width: 100%;
+    animation: testimonialMove 10s infinite ease-in-out;
+}
+
+/* EACH SLIDE */
+#testimonialCarousel .carousel-item {
+    flex: 0 0 100%;
+    display: block;
+}
+
+/* REMOVE BOOTSTRAP FADE/SLIDE EFFECT */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    transform: none !important;
+}
+
+
+.testimonial-card .icon-gray {
+    opacity: 1;
+}
+
+.testimonial-card .user-name {
+    color: var(--hero-heading);
+}
+
+.testimonial-card .quote-text {
+    color: #000;
+}
+
+.carousel-item:nth-child(1) .col-md-4:nth-child(2) .icon-orange,
+.carousel-item:nth-child(2) .col-md-4:nth-child(2) .icon-orange,
+.carousel-item:nth-child(3) .col-md-4:nth-child(2) .icon-orange {
+    display: inline-block;
+    animation: quotePulse 1.5s infinite ease-in-out;
+}
+
+.carousel-item:nth-child(1) .col-md-4:nth-child(2) .user-name,
+.carousel-item:nth-child(2) .col-md-4:nth-child(2) .user-name,
+.carousel-item:nth-child(3) .col-md-4:nth-child(2) .user-name {
+    color: var(--riders-orange);
+}
+
+@keyframes testimonialMove {
+    0% { transform: translateX(0); }
+    30% { transform: translateX(0); }
+
+    33% { transform: translateX(-100%); }
+    63% { transform: translateX(-100%); }
+
+    66% { transform: translateX(-200%); }
+    96% { transform: translateX(-200%); }
+
+    100% { transform: translateX(0); }
+}
+
+.carousel-indicators {
+    margin-top: 40px;
+    position: relative;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    opacity: 1;
+    margin: 0 6px;
+}
+
+.carousel-indicators button:nth-child(1) {
+    animation: dot1 10s infinite;
+}
+.carousel-indicators button:nth-child(2) {
+    animation: dot2 10s infinite;
+}
+.carousel-indicators button:nth-child(3) {
+    animation: dot3 10s infinite;
+}
+
+@keyframes dot1 {
+    0%, 30%, 100% { background-color: var(--riders-orange); }
+    33%, 96% { background-color: #ccc; }
+}
+
+@keyframes dot2 {
+    0%, 30% { background-color: #ccc; }
+    33%, 63% { background-color: var(--riders-orange); }
+    66%, 100% { background-color: #ccc; }
+}
+
+@keyframes dot3 {
+    0%, 63% { background-color: #ccc; }
+    66%, 96% { background-color: var(--riders-orange); }
+    100% { background-color: #ccc; }
+}
+
+.carousel-item {
+    display: block;
+}
+
+.carousel-item .col-md-4 {
+    transition: all 0.6s ease;
+    opacity: 0.4;
+    transform: scale(0.9);
+}
+
+.carousel-item .col-md-4:nth-child(2) {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.carousel-inner {
+    animation: cardSwitch 9s infinite;
+}
+
+.carousel-item .icon-gray {
+    opacity: 0.3;
+}
+
+.carousel-item .user-name {
+    color: var(--hero-heading);
+}
+
+.carousel-item .quote-text {
+    color: #000;
+}
+
+.carousel-item .col-md-4:nth-child(2) .icon-orange {
+    display: inline-block;
+    animation: quotePulse 1.5s infinite;
+}
+
+.carousel-item .col-md-4:nth-child(2) .user-name {
+    color: var(--riders-orange);
+}
+
+@keyframes cardSwitch {
+    0%, 30% {
+        transform: translateX(0);
+    }
+    33%, 63% {
+        transform: translateX(0);
+    }
+    66%, 96% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
 @media (max-width: 1200px) {
 
     .main-section-heading-aboutus {
