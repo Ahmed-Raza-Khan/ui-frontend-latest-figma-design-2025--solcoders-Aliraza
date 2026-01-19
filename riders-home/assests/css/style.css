@@ -409,38 +409,50 @@ h1 span{
     margin-left: 10%;
 }
 
-.icon-box {
-    width: 110px;
-    height: 100px;
+.service-card {
     background-color: #FFF6F1;
-    border-radius: 5px;
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
-}
-
-/* .icon-box {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    border-radius: 10px;
+    transition: all 0.35s ease;
     height: 100%;
-    border-radius: 50%;
-} */
+    cursor: pointer;
+}
 
-.active-icon-box {
+.service-card .icon-box {
+    background-color: #FFF6F1;
+    transition: all 0.35s ease;
+}
+
+.service-card:hover {
     background-color: var(--riders-orange);
-    border-radius: 5px;
+    transform: translateY(-6px);
 }
 
-.custom-icon {
-    width: 70%; 
-    height: 70%;
-    /* filter: invert(20%) sepia(80%) saturate(2000%) hue-rotate(330deg) brightness(100%) contrast(100%); */
+.service-card:hover .feature-heading,
+.service-card:hover .feature-description {
+    color: #ffffff;
 }
 
-.custom-icon-white {
-    width: 70%; 
-    height: 70%;
-    /* filter: brightness(0) invert(1); */
+.service-card:hover .icon-box {
+    background-color: var(--riders-orange);
+}
+
+.service-card:hover .custom-icon,
+.service-card:hover .custom-icon-white {
+    filter: brightness(0) invert(1);
+}
+
+/* ACTIVE (Middle Card) */
+.active-card:hover {
+    background-color: var(--riders-orange);
+}
+
+.active-card .feature-heading,
+.active-card .feature-description:hover {
+    color: #000000;
+}
+
+.active-card .icon-box:hover {
+    background-color: var(--riders-orange);
 }
 
 .services-section {
