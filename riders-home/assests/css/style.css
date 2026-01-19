@@ -1094,7 +1094,7 @@ h1 span{
     max-width: none;
     z-index: 5;
     pointer-events: none;
-}
+}   
 
 @media (max-width:1199px){
     .hero-content-box {
@@ -1461,7 +1461,7 @@ h1 span{
 
 /* footer section */
 .site-footer {
-    background-image: url('src/riders-image/footer-img.jpg');
+    background-image: url('../images/footer-img.jpg');
     background-size: cover;
     position: relative;
 }

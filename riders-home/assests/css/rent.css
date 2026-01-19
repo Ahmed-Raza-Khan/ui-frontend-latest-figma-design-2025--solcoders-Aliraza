@@ -1,12 +1,12 @@
-@import url('https://fonts.cdnfonts.com/css/amcap-eternal');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.cdnfonts.com/css/amcap-eternal');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
 
 /* navbar section */
 /* body{
     background-color: #666666;
 } */
 
-:root {
+/* :root {
     --riders-orange: #FF6E1D;
     --font-montserrat: 'Montserrat';
     --font-amcap: 'AMCAP Eternal';
@@ -58,9 +58,9 @@
     text-transform: capitalize;
     line-height: 14px;
     font-family: var(--font-montserrat);
-    background-color: var(--riders-orange);
+    background-color: var(--riders-orange); */
     /* border-color: var(--riders-orange); */
-    border-radius: 5px;
+    /* border-radius: 5px;
     color: var(--font-white);
 }
 
@@ -124,7 +124,7 @@
         height: 48px;
         font-size: 13px;
     }
-}
+} */
 
 /* hero section */
 .about-hero-section {
@@ -626,8 +626,8 @@
 
 
 /* footer section */
-.site-footer {
-    background-image: url('src/riders-image/footer-img.jpg');
+/* .site-footer {
+    background-image: url('../images/footer-img.jpg');
     background-size: cover;
     position: relative;
 }
@@ -737,16 +737,16 @@
     color: var(--font-white);
     text-decoration: none;
     max-width: 434px;
-    width: 100%;
+    width: 100%; */
     /* height: 16px; */
-}
+/* }
 
 .newsletter-input {
     background-color: transparent;
     border: 1px solid var(--font-white);
-    color: var(--hero-heading);
+    color: var(--hero-heading); */
     /* font-size: 0.9rem; */
-    box-shadow: none !important; 
+    /* box-shadow: none !important; 
     width: 100%;
     max-width: 434px;
     height: 55px;
@@ -759,9 +759,9 @@
     line-height: 13px;
     font-style: 'regular';
     font-weight: 400;
-    padding-left: 20px;
+    padding-left: 20px; */
     /* opacity: 0.6; */
-}
+/* }
 
 .custom-orange-btn-footer {
     background-color: var(--riders-orange);
@@ -807,7 +807,7 @@
         max-width: 1140px;
         margin-left: auto;
         margin-right: auto;
-    }   
+    }    */
 
     /* .site-footer .row.pt-3 {
         row-gap: 30px;
@@ -815,7 +815,7 @@
         /* min-width: 850px; */
     /* } */
 
-    .site-footer .col-md-2,
+    /* .site-footer .col-md-2,
     .site-footer .col-md-3 {
         text-align: left;
     }
@@ -883,9 +883,9 @@
 
     .newsletter-desc-email {
         font-size: 14px;
-        margin: 0 auto 15px;
+        margin: 0 auto 15px; */
         /* margin-bottom: 15px; */
-    }
+    /* }
 
     .newsletter-input{
         max-width: 0 auto;
@@ -978,4 +978,4 @@
         font-size: 13px;
         line-height: 18px;
     }
-}
+} */
