@@ -6,59 +6,7 @@
     background-color: #666666;
 } */
 
-/* :root {
-    --riders-orange: #FF6E1D;
-    --font-montserrat: 'Montserrat';
-    --font-amcap: 'AMCAP Eternal';
-    --font-color: #666666;
-    --font-white: #FFFFFF;
-    --hero-heading: #111111;
-}
-
-.navbar{
-    padding: 0.5rem 0;
-}
-
-.navbar-nav{
-    gap: 8px;
-}
-
-.logo-main{
-    font-family: var(--font-amcap);
-    font-weight: 400;
-    font-style: 'regular';
-    font-size: 30px;
-}
-
-.custom-orange-link {
-    color: var(--riders-orange) !important;
-    font-family: var(--font-montserrat);
-    font-size: 16px;
-    font-style: 'medium';
-    line-height: 26px;
-    font-weight: 500;
-}
-
-.text-nav-all{
-    font-family: var(--font-montserrat);
-    font-weight: 400;
-    font-style: 'regular';
-    font-size: 16px;
-    line-height: 26px;
-    text-transform: capitalize;
-    color: var(--font-color);
-}
-
-.custom-orange-btn {
-    width: 170px;
-    height: 55px;
-    font-weight: 500;
-    font-style: 'medium';
-    font-size: 14px;
-    text-transform: capitalize;
-    line-height: 14px;
-    font-family: var(--font-montserrat);
-    background-color: var(--riders-orange); */
+ 
     /* border-color: var(--riders-orange); */
     /* border-radius: 5px;
     color: var(--font-white);
@@ -229,7 +177,7 @@
 
 
 /* card review section */
-.testimonial-card {
+/* .testimonial-card {
     max-width: 1320px;
     width: 100%;
     height: auto;
@@ -239,7 +187,7 @@
     border: none;
     padding: 20px;
     box-shadow: 10px 8px 25px rgba(0, 0, 0, 0.07);
-}
+} */
 
 .testimonial-card-gray{
     width: 100%;
@@ -254,13 +202,26 @@
     background-color: #FAFAFA;
 }
 
+.testimonial-card-gray:hover{
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    min-height: 293px;
+    border-radius: 10px;
+    border: none;
+    margin: 0 auto 24px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    background-color: #FFFFFF;
+}
+
 .testimonial-img {
     width: 70px;
     height: 70px;
     object-fit: cover;
 }
 
-.user-detail , h6{
+.user-detail , h6 {
     font-family: var(--font-amcap);
     font-size: 18px;
     font-style: 'regular';
@@ -268,6 +229,7 @@
     line-height: 18px;
     text-transform: uppercase;
     color: var(--hero-heading);
+    transition: color 0.3s ease;
 }
 
 .user-detail , small{
@@ -283,6 +245,29 @@
 .quote-icon {
     width: 56px;
     height: 40px;
+}
+
+.quote-orange {
+    display: none;
+}
+
+.quote-gray {
+    display: block;
+}
+
+.testimonial-card:hover .user-detail h6,
+.testimonial-card-gray:hover .user-detail h6 {
+    color: var(--riders-orange);
+}
+
+.testimonial-card:hover .quote-orange,
+.testimonial-card-gray:hover .quote-orange {
+    display: block;
+}
+
+.testimonial-card:hover .quote-gray,
+.testimonial-card-gray:hover .quote-gray {
+    display: none;
 }
 
 .card-text{

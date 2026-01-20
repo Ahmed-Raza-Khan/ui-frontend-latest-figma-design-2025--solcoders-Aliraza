@@ -336,7 +336,7 @@
 
 .input-group input.form-control {
     color: #5D5A6F99;
-    background-color: #FAFAFA;
+    /* background-color: #FAFAFA; */
 }
 
 .input-group-text {
@@ -425,13 +425,13 @@
 }
 
 .price-text {
-    font-size: 1.5rem;
+    font-size: 19px;
     font-weight: bold;
     color: var(--riders-orange);
 }
 
 .day-text {
-    font-size: 0.875rem;
+    font-size: 16px;
     font-weight: normal;
     color: #6c757d;
 }

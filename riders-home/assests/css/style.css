@@ -1394,16 +1394,16 @@ h1 span{
     transition: all 0.5s ease;
 }
 
-.active-card {
+.active-card-ending {
     /* border: 2px solid var(--riders-orange); */
     transform: scale(1.05);
 }
 
-.active-card .user-name {
+.active-card-ending .user-name {
     color: var(--riders-orange);
 }
 
-.active-card .icon-orange {
+.active-card-ending .icon-orange {
     animation: quotePulse 1.5s infinite;
 }
 
@@ -1456,6 +1456,41 @@ h1 span{
     line-height: 1.6;
     font-weight: 300;
     font-style: 'light';
+}
+
+.quote-orange {
+    display: none;
+}
+
+.quote-gray {
+    display: inline-block;
+}
+
+.user-name {
+    color: var(--hero-heading);
+    transition: color 0.2s ease;
+}
+
+.user-title {
+    color: var(--font-color);
+    transition: color 0.4s ease;
+}
+
+.active-card-ending {
+    transform: scale(1.05);
+}
+
+.active-card-ending .quote-gray {
+    display: none;
+}
+
+.active-card-ending .quote-orange {
+    display: inline-block;
+    animation: quotePulse 1.5s infinite;
+}
+
+.active-card-ending .user-name {
+    color: var(--riders-orange);
 }
 
 @media (max-width: 1200px) {
@@ -1573,10 +1608,29 @@ h1 span{
     width: 40px;
     height: 40px;
     background-color: #333;
-    color: white;
+    /* color: white; */
     border-radius: 4px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease , transform 0.2s ease;
+}
+
+.social-icon-link img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    transition: filter 0.3s ease;
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus,
+.social-icon-link:active {
+    background-color: var(--riders-orange);
+}
+
+.social-icon-link:hover img,
+.social-icon-link:focus img,
+.social-icon-link:active img {
+    filter: brightness(0) invert(1);
 }
 
 .social-icon-link:hover {
