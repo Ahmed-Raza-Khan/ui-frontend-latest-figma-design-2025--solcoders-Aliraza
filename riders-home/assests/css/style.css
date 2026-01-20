@@ -264,7 +264,8 @@ h1 span{
 
     .car-image {
         width: 900px;
-        left: 40%;
+        left: 35%;
+        bottom: 20%;
     }
 
     .description{
@@ -272,8 +273,9 @@ h1 span{
     }
 
     .orange-curves{
-        margin-top: 10%;
-        margin-left: 6px;
+        top: 15%;
+        right: 30%;
+        width: 1200px;
     }
 
     .slider-dots-orange-3{
@@ -1528,6 +1530,20 @@ h1 span{
         width: 58px;
         height: 58px;
     }
+
+    .custom-slider {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .slider-track {
+        gap: 20px;
+    }
+
+    .slider-card {
+        min-width: 80%;
+        flex: 0 0 80%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1559,6 +1575,30 @@ h1 span{
     .icon-orange {
         width: 46px;
     }
+
+    .slider-track {
+        animation: slideMoveMobile 12s infinite ease-in-out;
+    }
+
+    .slider-card {
+        min-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    @keyframes slideMoveMobile {
+        0%, 25% {
+            transform: translateX(0%);
+        }
+        33%, 58% {
+            transform: translateX(-100%);
+        }
+        66%, 91% {
+            transform: translateX(-200%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
 }
 
 @media (max-width: 480px) {
@@ -1574,12 +1614,26 @@ h1 span{
     }
 
     .testimonial-card {
-        padding: 1.2rem;
+        padding: 1rem;
     }
 
     .user-avatar {
         width: 52px;
         height: 52px;
+    }
+
+    .quote-text {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .user-avatar {
+        width: 48px;
+        height: 48px;
+    }
+
+    .user-name {
+        font-size: 15px;
     }
 }
 
