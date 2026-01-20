@@ -450,14 +450,37 @@
 .icon-box {
     width: 60px;
     height: 60px;
-    background-color: #FFF6F1;
+    /* background-color: #FFF6F1; */
     border-radius: 5px;
     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 }
 
+.image-width-step {
+    width: 65px;
+    height: 65px;
+}
+
 .icon-box.active {
-    background-color: var(--riders-orange);
+    /* background-color: var(--riders-orange); */
     color: #fff;
+}
+
+.active-carscard:hover {
+    background-color: var(--riders-orange);
+}
+
+.fact-card:hover .icon-box {
+    background-color: var(--riders-orange);
+}
+
+.fact-card:hover .image-width-step,
+.fact-card:hover .image-width-step {
+    filter: brightness(0) invert(1);
+}
+
+.fact-card .feature-heading,
+.fact-card .feature-description:hover {
+    color: #000000;
 }
 
 .fact-number {
@@ -479,6 +502,10 @@
     color: var(--riders-orange);
 }
 
+.fact-card:hover .plus-sign{
+    color: var(--hero-heading);
+}
+
 .fact-description {
     font-family: var(--font-montserrat);
     font-size: 16px;
@@ -498,6 +525,11 @@
     }
 
     .fact-card{
+        background-color: #FFF6F1;
+        border-radius: 10px;
+        transition: all 0.35s ease;
+        height: 100%;
+        cursor: pointer;
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -490,7 +490,6 @@ h1 span{
     filter: brightness(0) invert(1);
 }
 
-/* ACTIVE (Middle Card) */
 .active-card:hover {
     background-color: var(--riders-orange);
 }
