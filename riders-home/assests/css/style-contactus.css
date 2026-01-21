@@ -16,7 +16,7 @@
 }
 
 .navbar{
-    padding: 0.5rem 0;
+    padding:     0.5rem 0;
 }
 
 .navbar-nav{
@@ -366,7 +366,7 @@
     left: 0;
     right: 0;
     height: 500px;
-    background-image: url('../images/map.png');
+    /* background-image: url('../images/map.png'); */
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
     background-size: cover;

@@ -517,6 +517,28 @@
     text-transform: capitalize;
 }
 
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.count {
+  transition: --num 3s ease-out;
+  counter-reset: num var(--num);
+}
+
+.count::after {
+  content: counter(num);
+}
+
+.facts-section:hover .count, 
+.facts-section {
+     --num: var(--target);
+}
+
+.count { --num: 0; }
+
 @media (min-width: 1400px) {
 
     .main-heading-fact {

@@ -131,7 +131,8 @@
                                 <div class="icon-box mx-auto mb-3 d-flex align-items-center justify-content-center">
                                     <img src="assests/images/step-heart.png" alt="" class="image-width-step">
                                 </div><br>
-                                <h3 class="fact-number">789 <span class="plus-sign">+</span></h3>
+                                <h3 class="fact-number"><span class="counter" data-target="789">0</span> <span class="plus-sign">+</span></h3>
+                                <!-- <h3 class="fact-number">789 <span class="plus-sign">+</span></h3> -->
                                 <p class="fact-description">Happy Customers</p>
                             </div>
                         </div>
@@ -141,7 +142,8 @@
                                 <div class="icon-box active mx-auto mb-3 d-flex align-items-center justify-content-center">
                                     <img src="assests/images/step-car.png" alt="" class="image-width-step">
                                 </div><br>
-                                <h3 class="fact-number">65 <span class="plus-sign">+</span></h3>
+                                <h3 class="fact-number"><span class="counter" data-target="65">0</span> <span class="plus-sign">+</span></h3>
+                                <!-- <h3 class="fact-number">65 <span class="plus-sign">+</span></h3> -->
                                 <p class="fact-description">Number of Cars</p>
                             </div>
                         </div>
@@ -151,7 +153,8 @@
                                 <div class="icon-box mx-auto mb-3 d-flex align-items-center justify-content-center">
                                     <img src="assests/images/step-factory.png" alt="" class="image-width-step">
                                 </div><br>
-                                <h3 class="fact-number">120 <span class="plus-sign">+</span></h3>
+                                <h3 class="fact-number"><span class="counter" data-target="120">0</span> <span class="plus-sign">+</span></h3>
+                                <!-- <h3 class="fact-number">120 <span class="plus-sign">+</span></h3> -->
                                 <p class="fact-description">Car Center</p>
                             </div>
                         </div>
@@ -161,7 +164,8 @@
                                 <div class="icon-box active mx-auto mb-3 d-flex align-items-center justify-content-center">
                                     <img src="assests/images/step-meter.png" alt="" class="image-width-step">
                                 </div><br>
-                                <h3 class="fact-number">558 <span class="plus-sign">+</span></h3>
+                                <h3 class="fact-number"><span class="counter" data-target="558">0</span> <span class="plus-sign">+</span></h3>
+                                <!-- <h3 class="fact-number">558 <span class="plus-sign">+</span></h3> -->
                                 <p class="fact-description">Total kilometers</p>
                             </div>
                         </div>
@@ -241,6 +245,49 @@
         
         
         <!-- Bootstrap JavaScript Libraries -->
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const counters = document.querySelectorAll('.counter');
+                const speed = 200;
+
+                const startCounter = (entries) => {
+                    entries.forEach(entry => {
+                        const counter = entry.target;
+                        const target = +counter.getAttribute('data-target');
+
+                        if (entry.isIntersecting) {
+                            counter.innerText = 0; // jab view mein aaye, fresh start
+
+                            const updateCount = () => {
+                                const count = +counter.innerText;
+                                const inc = target / speed;
+
+                                if (count < target) {
+                                    counter.innerText = Math.ceil(count + inc);
+                                    setTimeout(updateCount, 15);
+                                } else {
+                                    counter.innerText = target;
+                                }
+                            };
+
+                            updateCount();
+                        } else {
+                            // 👈 jab view se bahar jaye
+                            counter.innerText = 0;
+                        }
+                    });
+                };
+
+                const observer = new IntersectionObserver(startCounter, {
+                    threshold: 0.5
+                });
+
+                counters.forEach(counter => observer.observe(counter));
+            });
+        </script>
+
+
+
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
