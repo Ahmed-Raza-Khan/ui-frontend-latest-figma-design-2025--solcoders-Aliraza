@@ -243,6 +243,21 @@ h1 span{
                          67%, 100% { background: var(--riders-orange); }
 }
 
+.fade-in {
+    animation: textFade 0.6s ease;
+}
+
+@keyframes textFade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .orange-curves{
     position: relative;
     /* left: 0%; */
